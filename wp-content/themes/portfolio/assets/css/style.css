@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+
+/* 共通 */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.lato{
+  font-family: 'Lato', sans-serif;
+}
+.mon{
+  font-family: 'Montserrat', sans-serif;
+}
+.l-container,
+.l-container:before,
+.l-container:after,
+.l-container *,
+.l-container *:before,
+.l-container *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.l-container{
+  min-height: 100%;
+}
+.dn_pc{
+  display: none;
+}
+.l-container img {
+  width: 100%;
+  height:auto;
+  vertical-align: bottom;
+}
+ul,ol,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  opacity:0.7;
+}
+.list{
+  display: flex;
+  display: -webkit-flex;
+}
+
+.heading{
+  text-align: center;
+  padding: 20px 0;
+  color:#333;
+}
+.heading_title{
+  font-size: 36px;
+  letter-spacing: .03em;
+  line-height: 1.4;
+}
+.heading_subtitle{
+  font-size: 13px;
+  letter-spacing: .05em;
+}
+/* /共通 */
+
+/* レイアウト */
+.l_inner{
+  width:1020px;
+  margin: 0 auto;
+}
+.l_content{
+  padding: 100px 0;
+  background: #f3f3f3;
+}
+.l_header_inner,.l_footer_inner{
+  background: #222223;
+  width:100%;
+}
+.l_header_content{
+  margin: 0 100px;
+  padding: 20px 0;
+  color:#fff;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l_footer_content{
+  margin: 0 100px;
+  padding: 30px 0 20px;
+  color:#b4b4b4;
+  text-align: center;
+}
+.l_section_concept{
+  margin: 0 0 100px;
+}
+.l_section_works{
+  margin: 0 0 100px;
+}
+.l_section_contact{
+  margin: 0 0 100px;
+}
+/* /レイアウト */
+
+/* header */
+.header_logo{
+  font-size: 20px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.header_title{
+  font-size: 15px;
+  letter-spacing: .1em;
+  margin: 0 0 0 30px;
+  color:#b4b4b4;
+}
+.header_logo .logo a{
+  color:#b4b4b4;
+}
+.header_nav{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .2em;
+  margin: 0 60px 0 0;
+}
+.header_nav li{
+  margin: 0 0 0 50px;
+}
+.header_nav li:nth-child(1){
+  margin: 0;
+}
+.header_nav a{
+  color:#b4b4b4;
+}
+/* /header */
+
+/* works */
+.l_work_content{
+  margin: 100px 0 0;
+}
+.worklist{
+  margin: 160px 0 0;
+}
+.worklist:nth-child(1){
+  margin: 0;
+}
+.work_thumbnail{
+  border: 1px solid #dcdcdc;
+}
+.worklist .title{
+  margin: 30px 0 0;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: .05em;
+  font-weight: bold;
+}
+.worklist .title .far{
+  font-size: 12px;
+  margin: 0 0 0 10px;
+}
+.worklist .text{
+  font-size: 14px;
+  margin: 20px 0 0;
+  letter-spacing: .1em;
+}
+.l_worklist_inner{
+  padding: 0 30px;
+}
+.l_worklist_content{
+  margin: 20px 0 0;
+}
+.worklist_content{
+  font-size: 14px;
+  letter-spacing: .1em;
+  line-height: 1.5;
+}
+.pagenation{
+  margin: 150px 0 0;
+}
+.page-numbers{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+}
+.page-numbers span{
+  height: 40px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  width: 40px;
+}
+.page-numbers li{
+  margin: 0 0 0 30px;
+  font-size: 16px;
+  background: #dcdcdc;
+  color:#fff;
+}
+.current{
+  background: #a9a9a9;
+}
+.page-numbers a{
+  color:#fff;
+  height: 40px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  width: 40px;
+}
+.page-numbers li:nth-child(1){
+  margin: 0;
+}
+/* /works */
+/* footer */
+.footer_nav{
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: .1em;
+  margin: 0 0 20px;
+}
+.footer_nav .list{
+  justify-content: center;
+}
+.footer_nav li{
+  margin: 0 0 0 40px;
+  position: relative;
+}
+.footer_nav li:after{
+  content: "|";
+  display: block;
+  position: absolute;
+  width:1px;
+  height:18px;
+  top:0;
+  right:-15px;
+}
+.footer_nav li:nth-last-child(1):after{
+  display: none;
+}
+.footer_nav li:nth-child(1){
+  margin: 0;
+}
+#footer a{
+  color:#b4b4b4;
+}
+.sns_button{
+  font-size: 30px;
+  margin: 0 0 30px;
+}
+.sns_button .list{
+  justify-content: center;
+}
+.sns_button li{
+  margin: 0 0 0 30px;
+}
+.sns_button li:nth-child(1){
+  margin: 0;
+}
+.copyright{
+  font-size: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #b4b4b4;
+}
+/* /footer */
+
+
+/* スマホレスポンシブ */
+@media screen and (max-width: 641px) {
+
+}

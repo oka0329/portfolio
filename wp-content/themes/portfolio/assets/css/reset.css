@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* Reset Style */
+html {
+  overflow-y: scroll;
+}
+​
+body {
+  line-height: 1;
+  letter-spacing: 0;
+  color: #363434;
+  word-wrap: break-word;
+}
+​
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+​
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+}
+​
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+​
+caption, th {
+  text-align: left;
+}
+​
+q:before, q:after {
+  content: '';
+}
+​
+img,
+object,
+embed {
+  vertical-align: top;
+}
+​
+hr, legend {
+  display: none;
+}
+​
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+​
+img, abbr, acronym, fieldset {
+  border: 0;
+}
+​
+li {
+  list-style-type: none;
+}
+br{
+  letter-spacing: 0;
+}
+/* YUI 3.4.1 (build 4118) Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License. http://yuilibrary.com/license/ */
+body {
+  font: 13px/1.231 arial, helvetica, clean, sans-serif;
+  *font-size: small;
+  *font: x-small;
+}
+​
+select, input, button, textarea {
+  font: 99% arial,helvetica,clean,sans-serif;
+}
+​
+table {
+  font-size: inherit;
+  font: 100%;
+}
+​
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%;
+}
+​
+/* 汎用クラス */
+.fr {
+  float: right;
+}
+​
+.imgR {
+  float: right;
+  margin-left: 20px;
+}
+​
+.fl {
+  float: left;
+}
+​
+.imgL {
+  float: left;
+  margin-right: 20px;
+}
+​
+.imgC,
+.tC,
+.btn {
+  text-align: center;
+}
+​
+.imgC {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+​
+.tR,
+.sign {
+  text-align: right;
+}
+​
+.mt0 {
+  margin-top: 0px !important;
+}
+​
+.mb0 {
+  margin-bottom: 0px !important;
+}
+​
+.pt0 {
+  padding-top: 0px !important;
+}
+​
+.pb0 {
+  padding-bottom: 0px !important;
+}
+​
+.mt5 {
+  margin-top: 5px !important;
+}
+​
+.mb5 {
+  margin-bottom: 5px !important;
+}
+​
+.pt5 {
+  padding-top: 5px !important;
+}
+​
+.pb5 {
+  padding-bottom: 5px !important;
+}
+​
+.mt10 {
+  margin-top: 10px !important;
+}
+​
+.mb10 {
+  margin-bottom: 10px !important;
+}
+​
+.pt10 {
+  padding-top: 10px !important;
+}
+​
+.pb10 {
+  padding-bottom: 10px !important;
+}
+​
+.mt15 {
+  margin-top: 15px !important;
+}
+​
+.mb15 {
+  margin-bottom: 15px !important;
+}
+​
+.pt15 {
+  padding-top: 15px !important;
+}
+​
+.pb15 {
+  padding-bottom: 15px !important;
+}
+​
+.mt20 {
+  margin-top: 20px !important;
+}
+​
+.mb20 {
+  margin-bottom: 20px !important;
+}
+​
+.pt20 {
+  padding-top: 20px !important;
+}
+​
+.pb20 {
+  padding-bottom: 20px !important;
+}
+​
+.mt25 {
+  margin-top: 25px !important;
+}
+​
+.mb25 {
+  margin-bottom: 25px !important;
+}
+​
+.pt25 {
+  padding-top: 25px !important;
+}
+​
+.pb25 {
+  padding-bottom: 25px !important;
+}
+​
+.mt30 {
+  margin-top: 30px !important;
+}
+​
+.mb30 {
+  margin-bottom: 30px !important;
+}
+​
+.pt30 {
+  padding-top: 30px !important;
+}
+​
+.pb30 {
+  padding-bottom: 30px !important;
+}
+​
+.mt35 {
+  margin-top: 35px !important;
+}
+​
+.mb35 {
+  margin-bottom: 35px !important;
+}
+​
+.pt35 {
+  padding-top: 35px !important;
+}
+​
+.pb35 {
+  padding-bottom: 35px !important;
+}
+​
+.mt40 {
+  margin-top: 40px !important;
+}
+​
+.mb40 {
+  margin-bottom: 40px !important;
+}
+​
+.pt40 {
+  padding-top: 40px !important;
+}
+​
+.pb40 {
+  padding-bottom: 40px !important;
+}
+​
+.mt45 {
+  margin-top: 45px !important;
+}
+​
+.mb45 {
+  margin-bottom: 45px !important;
+}
+​
+.pt45 {
+  padding-top: 45px !important;
+}
+​
+.pb45 {
+  padding-bottom: 45px !important;
+}
+​
+.mt50 {
+  margin-top: 50px !important;
+}
+​
+.mb50 {
+  margin-bottom: 50px !important;
+}
+​
+.pt50 {
+  padding-top: 50px !important;
+}
+​
+.pb50 {
+  padding-bottom: 50px !important;
+}
+​
+/* clearfix */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+​
+/*----------------------------------------------------
+	element style
+----------------------------------------------------*/
+body {
+  color: #111;
+  font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro w3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS P Gothic","Arial",sans-serif;
+  font-size: 62.5%;
+}
+​
+input, textarea {
+  font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro w3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS P Gothic","Arial",sans-serif;
+  font-size: 62.5%;
+}
+button {
+	vertical-align: middle;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+* html body, * html input, * html textarea {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+​
+a:link {
+  color: #111111;
+  text-decoration:none;
+}
+a:visited {
+  color: #111111;
+}
