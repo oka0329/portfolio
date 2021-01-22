@@ -33,7 +33,7 @@
         </div>
         <div class="header_nav">
           <ul class="list">
-            <li><a href="<?php home_url(); ?>/about">About</a></li>
+            <li><a href="<?php home_url(); ?>/about">Abouta</a></li>
             <li><a href="<?php home_url(); ?>/works">Works</a></li>
             <li><a href="<?php home_url(); ?>/contact">Contact</a></li>
           </ul>
