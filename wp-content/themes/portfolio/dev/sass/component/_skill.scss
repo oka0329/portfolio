@@ -1,0 +1,310 @@
+$html-level : 80%;
+$css-level : 80%;
+$js-level : 80%;
+$php-level : 80%;
+$sql-level : 80%;
+$wp-level : 80%;
+$mt-level : 80%;
+$sass-level : 80%;
+$pug-level : 80%;
+$ts-level : 80%;
+$slack-level : 80%;
+$cw-level : 80%;
+$ps-level : 80%;
+$il-level : 80%;
+$xd-level : 80%;
+$git-level : 80%;
+$st-level : 80%;
+
+
+.skill{
+  &__name{
+    margin: 0 0 40px;
+    font-size: 22px;
+    text-align: center;
+  }
+  &__list{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+  }
+  &__item{
+    width: calc((100% - 200px) / 3);
+    height:70px;
+    border-radius: 40px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    transition: .5s;
+
+    &:not(:nth-child(3n)){
+      margin-right:100px;
+    }
+    span{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color:#7c7575;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      top:50%;
+      left:50%;
+      font-size: 20px;
+      font-weight: bold;
+      color:#fff;
+      transform: translate(-50%,-50%);
+      z-index: 1000;
+      opacity: 0;
+      transition: .5s;
+    }
+
+    &::after{
+      content: "";
+      width: 0;
+      height: 100%;
+      border-radius: 40px;
+      display: block;
+      position: absolute;
+      transition: width .5s;
+    }
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.4);
+      &::after{
+      }
+      &::before{
+        opacity: 1;
+        font-size: 24px;
+      }
+      span{
+        opacity: 0;
+      }
+    }
+    &--html{
+      background: #fff5a5;
+      &::before{
+        content: "#{$html-level}";
+      }
+      &:hover{
+      &::after{
+        background: #E65B25;
+        width: $html-level;
+      }
+    }
+    }
+    &--css{
+      background: #c6fce5;
+      &::before{
+        content: "#{$css-level}";
+      }
+      &:hover{
+      &::after{
+        background: #264ADC;
+        width: $css-level;
+      }
+    }
+    }
+    &--js{
+      background: #edf798;
+      &::before{
+        content: "#{$js-level}";
+      }
+      &:hover{
+      &::after{
+        background: #EFD81D;
+        width: $js-level;
+      }
+    }
+    }
+    &--php{
+      background: #d6c8ff;
+      &::before{
+        content: "#{$php-level}";
+      }
+      &:hover{
+      &::after{
+        background: #858EBB;
+        width: $php-level;
+      }
+    }
+    }
+    &--sql{
+      background: #6ba8a9;
+      &::before{
+        content: "#{$sql-level}";
+      }
+      &:hover{
+      &::after{
+        background: #1d4d4f;
+        width: $sql-level;
+      }
+    }
+    }
+    &--wp{
+      background: #61c0bf;
+      &::before{
+        content: "#{$wp-level}";
+      }
+      &:hover{
+        &::after{
+          background: #207195;
+          width: $wp-level;
+        }
+      }
+    }
+    &--mt{
+      background: #78ADD1;
+      &::before{
+        content: "#{$mt-level}";
+      }
+      &:hover{
+      &::after{
+        background: #2A4B81;
+        width: $mt-level;
+      }
+    }
+    }
+    &--sass{
+      background: #F7CBE2;
+      &::before{
+        content: "#{$sass-level}";
+      }
+      &:hover{
+      &::after{
+        background: #C05D8D;
+        width: $sass-level;
+      }
+    }
+    }
+    &--pug{
+      background: #CFA37F;
+      &::before{
+        content: "#{$pug-level}";
+      }
+      &:hover{
+      &::after{
+        background: #412527;
+        width: $pug-level;
+      }
+    }
+    }
+    &--ts{
+      background: #cadefc;
+      &::before{
+        content: "#{$ts-level}";
+      }
+      &:hover{
+      &::after{
+        background: #2F74C0;
+        width: $ts-level;
+      }
+    }
+    }
+    &--slack{
+      background: #cabbe9;
+      &::before{
+        content: "#{$slack-level}";
+      }
+      &:hover{
+      &::after{
+        background: #4F0B4B;
+        width: $slack-level;
+      }
+    }
+    }
+    &--cw{
+      background: #ffc4d0;
+      &::before{
+        content: "#{$cw-level}";
+      }
+      &:hover{
+      &::after{
+        background: #E83546;
+        width: $cw-level;
+      }
+    }
+    }
+    &--ps{
+      background: #2FA3F7;
+      &::before{
+        content: "#{$ps-level}";
+      }
+      &:hover{
+      &::after{
+        background: #001D34;
+        width: $ps-level;
+      }
+    }
+    }
+    &--il{
+      background: #310000;
+      &::before{
+        content: "#{$il-level}";
+      }
+      &:hover{
+      &::after{
+        background: #F79500;
+        width: $il-level;
+      }
+    }
+    }
+    &--xd{
+      background-color: #450135;
+      &::before{
+        content: "#{$xd-level}";
+      }
+      &:hover{
+      &::after{
+        background: #F75EEE;
+        width: $xd-level;
+      }
+    }
+    }
+    &--git{
+      background-color: #ff847c;
+      &::before{
+        content: "#{$git-level}";
+      }
+      &:hover{
+      &::after{
+        background: #E84D31;
+        width: $git-level;
+      }
+    }
+    }
+    &--st{
+      background-color: #dbe2ef;
+      &::before{
+        content: "#{$st-level}";
+      }
+      &:hover{
+      &::after{
+        background-color: #003163;
+        width: $st-level;
+      }
+    }
+    }
+    &--git{
+      background: #ffdfdf;
+      &::before{
+        content: "#{$git-level}";
+      }
+      &:hover{
+      &::after{
+        background: #fb929e;
+        width: $git-level;
+      }
+    }
+    }
+  }
+}

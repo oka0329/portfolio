@@ -1,0 +1,20 @@
+.l-section{
+  padding: 150px 0 0;
+}
+
+
+.l-inner{
+  max-width: 1140px;
+  margin: 0 auto;
+
+  &--xs{
+    max-width: 780px;
+  }
+  &--sm{
+    max-width: 950px;
+  }
+  &--xl{
+    max-width: 1300px;
+  }
+
+}

@@ -1,0 +1,39 @@
+.works-detail{
+  &__body{
+    padding: 80px 0;
+  }
+  .card{
+    margin-bottom: 70px;
+    padding: 10px 10px 20px;
+    border: 1px solid #dbe2ef;
+    transition: .3s;
+    &:nth-child(2n){
+      margin-bottom:70px;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  &__image{
+    margin: 0 0 15px;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    margin: 0 0 10px;
+    padding: 0 0 0 30px;
+
+    .fa-clone{
+      padding: 0 0 0 5px;
+      font-size: 10px;
+    }
+  }
+  &__category{
+    color:#aaaaaa;
+    font-size: 14px;
+    letter-spacing: .1em;
+    margin: 0 0 10px;
+    padding: 0 0 0 30px;
+  }
+}

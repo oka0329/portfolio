@@ -1,0 +1,114 @@
+.concept{
+
+  &__body{
+    margin: 80px 0;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: .05em;
+    margin: 0 0 30px;
+  }
+  &__link{
+    text-align: center;
+  }
+}
+
+.works{
+    padding-top: 200px;
+  .l-inner{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+  &__image{
+    width: 60%;
+    margin: 0 40px 0 0;
+  }
+  &__contents{
+    padding: 50px 0;
+    width:calc(40% - 40px);
+    text-align: center;
+    position: relative;
+
+    &::after{
+      width: 600px;
+      height: 600px;
+      content:"";
+      display: block;
+      background: #f4eeff;
+      position: absolute;
+      top:-75px;
+      left:-150px;
+      z-index: -10;
+    }
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: .1em;
+    margin: 0 0 50px;
+  }
+  .heading{
+    &::before{
+      left: 20%;
+    }
+    &::after{
+      right: 20%;
+    }
+  }
+  &__link{
+    text-align: center;
+  }
+  .swiper-button-next,.swiper-button-prev{
+    color:$base-color;
+    font-weight: bold;
+    transition: .3s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+}
+
+.blog{
+
+  &__body{
+    margin: 100px 0 60px;
+  }
+  &__link{
+    text-align: center;
+    transition: .3s;
+  }
+  .card{
+    &__image{
+      margin: 0 0 20px;
+    }
+    &__text{
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+.contact{
+  background: #f0f0f0;
+  margin: 100px 0 0;
+  padding: 70px 0 ;
+
+  &__body{
+
+  }
+  &__text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 2.25;
+    letter-spacing: .1em;
+    margin: 0 0 40px;
+
+  }
+
+  &__link{
+    text-align: center;
+  }
+}

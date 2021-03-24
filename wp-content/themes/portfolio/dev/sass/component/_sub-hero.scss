@@ -1,0 +1,19 @@
+.sub-hero{
+  height: 350px;
+  background: url(../image/mv01.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title{
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: .1em;
+    font-weight: bold;
+    color:$base-color;
+  }
+}

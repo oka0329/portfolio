@@ -1,0 +1,16 @@
+.media{
+  padding: 0 50px;
+  &__inner{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+  }
+  &__image{
+    width: 50%;
+    margin: 0 5% 0 0;
+  }
+  &__body{
+    padding: 30px;
+  }
+}

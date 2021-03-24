@@ -1,0 +1,28 @@
+.page-top{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom:60px;
+  right:60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:all .3s;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  >a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    background-color: $base-color;
+    font-size: 30px;
+  }
+}

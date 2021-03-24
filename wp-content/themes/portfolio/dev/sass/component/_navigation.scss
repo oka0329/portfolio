@@ -1,0 +1,93 @@
+.header-nav{
+
+  font-family: 'Raleway', sans-serif;
+
+  @include mq(sp){
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    background-image: linear-gradient(135deg, #7633a4, #250d65);
+    height:100%;
+    width: 100%;
+    opacity:0;
+    transition: opacity .5s ease;
+    visibility: hidden;
+  }
+
+  &__inner{
+    @include mq(sp){
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__list{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    @include mq(sp){
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 5px;
+    margin: 0 35px 0 0;
+    transition: .5s;
+    position: relative;
+
+    @include mq(sp){
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      margin: 0 0 20px;
+    }
+
+    &::after{
+      position: absolute;
+      display: block;
+      content:"";
+      width:0;
+      height:3px;
+      background: #fff;
+      bottom:-5px;
+      left:0;
+      transition: width .3s;
+    }
+
+    &:hover{
+      transform: scale(1.2);
+      &::after{
+        width:100%;
+      }
+    }
+  }
+
+  &__link{
+    color:#fff;
+    padding: 10px 5px;
+    letter-spacing: .1em;
+
+  }
+
+  &__trigger{
+    display: none;
+    @include  mq(sp){
+      display: block;
+      padding: 5px;
+    }
+  }
+}

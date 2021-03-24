@@ -1,0 +1,47 @@
+.button{
+  display: inline-block;
+  position: relative;
+  width: 260px;
+  padding: 22px 0;
+  transition: all .3s;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 44px;
+  font-weight: bold;
+  font-size: 22px;
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .1em;
+
+  &::after{
+    position: absolute;
+    display: block;
+    content:"\025b6";
+    color:#fff;
+    width: 20px;
+    height: 20px;
+    top:50%;
+    right: 30px;
+    transform: translateY(-50%);
+    transition: .5s;
+  }
+  &:hover{
+    opacity: 0.8;
+    transition: all .3s;
+    color:$base-color;
+    background: #fff;
+    border: 1px solid $base-color;
+    transform: translateX(50px);
+  }
+  &:hover::after{
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    right:-100px;
+    color:$base-color;
+  }
+}
+.button-main{
+  background: linear-gradient(to right,$base-color,#005691 90%);
+
+}
