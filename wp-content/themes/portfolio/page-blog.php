@@ -43,7 +43,7 @@
                 <?php if(has_post_thumbnail()):?>
                 <?php the_post_thumbnail(); ?>
                 <?php else: ?>
-                <? endif; ?>
+                <?php endif; ?>
               </div>
               <p class="card__text"><?php the_title(); ?></p>
             </div>

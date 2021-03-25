@@ -41,7 +41,7 @@
               <?php if(has_post_thumbnail()):?>
               <?php the_post_thumbnail(); ?>
               <?php else: ?>
-              <? endif; ?>
+              <?php endif; ?>
             </div>
             <p class="works-detail__text"><?php the_title(); ?><i class="far fa-clone"></i></p>
             <p class="works-detail__category"><?php the_category(); ?></p>

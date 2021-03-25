@@ -1,32 +1,121 @@
 .contact-form{
-  background: #f9f7f7;
+  border: 3px solid $base-color;
+  border-radius: 10px;
+  padding: 50px 30px;
+  .flex{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+  }
+  &__button{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+    &:hover{
+      transform: translateX(0);
+  }
+  }
+  &__submit{
+    margin: 50px 0 0;
+    text-align: center;
+  }
+  &__back{
+    margin: 50px 50px 0 0;
+    text-align: center;
+  }
   table{
     width: 100%;
-    border: 1px solid $base-color;
-    border-radius: 10px;
-    padding: 50px;
+    font-size: 15px;
   }
   tr{
     display: block;
     width: 100%;
     border-bottom: 1px solid #dbe2ef;
   }
-  .contact-form__left{
-    padding: 20px 0 20px 20px;
+  span{
+    border-radius: 3px;
+    font-size: 12px;
+    background: #f08a5d;
+    color:#fff;
+    padding: 3px 5px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    float: right;
+    margin: 0 30px 0 0;
+  }
+  &__left{
+    padding: 30px;
     width: 240px;
   }
-  .contact-form__right{
-    padding: 20px;
+  &__right{
+    padding: 40px;
+    position: relative;
+  }
+  &__note{
+    font-size: 14px;
+    font-weight: bold;
+    color:#d72323;
+    position: absolute;
+    top:15px;
+  }
+  .table__title{
+    text-align: center;
+    font-size: 26px;
+    color:$base-color;
+    margin: 0 0 40px;
+    font-weight: bold;
   }
   input[type="text"]{
     width: 300px;
     height: 30px;
     font-size: 14px;
-  }
+    border: 1px solid $base-color;
+    border-radius: 5px;
+    transition: .3s;
+    padding: 5px;
+    &:focus{
+      border: 3px solid $base-color;
+      }
+    }
   input[type="radio"]{
-    padding-right: 15px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $base-color;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  input[type="radio"]:checked{
+    background: $base-color;
+  }
+  textarea{
+    border: 1px solid $base-color;
+    border-radius: 5px;
+    transition: .3s;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  textarea:focus{
+    border: 3px solid $base-color;
   }
   label{
-    margin: 0 0 10px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+  }
+  .error{
+    &__list{
+      padding: 20px;
+    }
+    &__item{
+      font-size: 14px;
+      font-weight: bold;
+      color:#d72323;
+    }
   }
 }

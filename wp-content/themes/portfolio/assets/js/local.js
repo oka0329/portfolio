@@ -46,5 +46,17 @@ $(window).scroll(function(){
     effect: 'cube',
  });
 
+$(".form-bg").on('keydown keyup keypress change focus blur', function() {
+if (jQuery(this).val() == '') {
+jQuery(this).css({
+backgroundColor: '#ffecda' /* 未入力時の背景色 */
+});
+} else {
+jQuery(this).css({
+backgroundColor: '#fff' /* 入力済みの背景色 */
+});
+}
+}).change();
+
 
 });

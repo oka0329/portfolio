@@ -27,15 +27,19 @@
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
 define( 'DB_NAME', 'portfolio' );
+// define( 'DB_NAME', 'LAA1200931-1ststage' );
 
 /** MySQL データベースのユーザー名 */
 define( 'DB_USER', 'root' );
+// define( 'DB_USER', 'LAA1200931' );
 
 /** MySQL データベースのパスワード */
 define( 'DB_PASSWORD', 'root' );
+// define( 'DB_PASSWORD', 'begijnhof2014' );
 
 /** MySQL のホスト名 */
 define( 'DB_HOST', 'localhost' );
+// define( 'DB_HOST', 'mysql147.phy.lolipop.lan' );
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -81,7 +85,7 @@ $table_prefix = 'wp_';
  *
  * @link https://ja.wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true);
 
 /* 編集が必要なのはここまでです ! WordPress でのパブリッシングをお楽しみください。 */
 
