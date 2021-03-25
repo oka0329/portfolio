@@ -5,7 +5,7 @@
       <ul class="footer-nav__list">
         <li class="footer-nav__item"><a href="/" class="footer-nav__link">TOP</a></li>
         <li class="footer-nav__item"><a href="/about" class="footer-nav__link">ABOUT</a></li>
-        <li class="footer-nav__item"><a href="/works" class="footer-nav__link">WORKS</a></li>
+        <li class="footer-nav__item"><a href="/work" class="footer-nav__link">WORKS</a></li>
         <li class="footer-nav__item"><a href="/blog" class="footer-nav__link">BLOG</a></li>
         <li class="footer-nav__item"><a href="/contact" class="footer-nav__link">CONTACT</a></li>
       </ul>

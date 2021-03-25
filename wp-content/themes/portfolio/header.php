@@ -30,7 +30,7 @@
           <div class="header-nav__inner">
             <ul class="header-nav__list">
               <li class="header-nav__item"><a href="/about" class="header-nav__link">ABOUT</a></li>
-              <li class="header-nav__item"><a href="/works" class="header-nav__link">WORKS</a></li>
+              <li class="header-nav__item"><a href="/work" class="header-nav__link">WORKS</a></li>
               <li class="header-nav__item"><a href="/blog" class="header-nav__link">BLOG</a></li>
               <li class="header-nav__item"><a href="/contact" class="header-nav__link">CONTACT</a></li>
             </ul>

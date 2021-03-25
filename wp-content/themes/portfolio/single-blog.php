@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="sub-hero">
-  <h2 class="sub-hero__title">ABOUT</h2>
+  <h2 class="sub-hero__title">BLOG</h2>
 </div>
 <div class="breadcrumb">
   <div class="l-inner">
@@ -12,7 +12,7 @@
       <li class="breadcrumb__item">
         <a href="/blog">BLOG</a>
       </li>
-      <li>
+      <li class="breadcrumb__item">
         <span><?php the_title(); ?></span>
       </li>
     </ul>
@@ -23,7 +23,7 @@
 <main class="main">
   <section class="blog-detail l-section">
     <div class="l-inner">
-      hoge
+
     </div>
   </section>
 </main>

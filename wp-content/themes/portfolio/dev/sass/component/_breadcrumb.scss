@@ -12,6 +12,8 @@
   &__item{
     margin: 0 50px 0 0;
     position: relative;
+    font-size: 14px;
+    letter-spacing: .05em;
 
     &:not(:nth-last-child(1))::after{
       display: block;

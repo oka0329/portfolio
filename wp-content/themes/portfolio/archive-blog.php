@@ -19,23 +19,24 @@
 
 <main class="main">
   <?php
-  $query_works = new WP_Query(
+  $query_blogs = new WP_Query(
       array(
-          'post_type' => 'blogs',
-          'posts_per_page' => 9,
+          'post_type' => 'blog',
+          'posts_per_page' => 2,
+          'paged' => $paged,
       ));
   ?>
 
-  <section class="l-section blog">
+  <section class="l-section blog-detail">
     <div class="l-inner">
       <div class="heading">
         <h2 class="heading__title">BLOG</h2>
         <span class="heading__subtitle">ブログ</span>
       </div>
       <div class="blog__body">
-        <div class="card-wrapper card-wrapper--col3">
-          <?php if ( $query_works->have_posts() ) : ?>
-          <?php while ( $query_works->have_posts() ) : $query_works->the_post();?>
+        <div class="card-wrapper card-wrapper--col2">
+          <?php if ( $query_blogs->have_posts() ) : ?>
+          <?php while ( $query_blogs->have_posts() ) : $query_blogs->the_post();?>
           <div class="card">
             <a href="<?php the_permalink(); ?>">
             <div class="card__body">
@@ -45,11 +46,40 @@
                 <?php else: ?>
                 <?php endif; ?>
               </div>
-              <p class="card__text"><?php the_title(); ?></p>
+              <div class="card__heading">
+                <p class="card__title"><?php the_title(); ?><i class="far fa-clone"></i></p>
+                <p class="card__category"><?php the_category(); ?></p>
+              </div>
+              <div class="card__contents"><?php the_excerpt();?></div>
             </div>
             </a>
           </div>
         <?php endwhile; endif; ?>
+        <?php wp_reset_query(); ?>
+        </div>
+      </div>
+      <div class="blog-detail__link">
+        <div class="pagination">
+    <?php global $wp_rewrite;
+    $paginate_base = get_pagenum_link(1);
+    if(strpos($paginate_base, '?') || ! $wp_rewrite->using_permalinks()){
+        $paginate_format = '';
+        $paginate_base = add_query_arg('paged','%#%');
+    }
+    else{
+        $paginate_format = (substr($paginate_base,-1,1) == '/' ? '' : '/') .
+        user_trailingslashit('page/%#%/','paged');;
+        $paginate_base .= '%_%';
+    }
+    echo paginate_links(array(
+        'base' => $paginate_base,
+        'format' => $paginate_format,
+        'total' => $wp_query->max_num_pages,
+        'mid_size' => 4,
+        'current' => ($paged ? $paged : 1),
+        // 'prev_text' => '«',
+        // 'next_text' => '»',
+    )); ?>
         </div>
       </div>
     </div>

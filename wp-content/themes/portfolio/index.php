@@ -72,7 +72,7 @@
         </div>
         <p class="works__text">過去の制作実績です。<br>様々なタイプのwebサイトを<br>心を込めて制作しております。</p>
         <div class="works__link">
-          <a href="/works" class="button button-main">MORE</a>
+          <a href="/work" class="button button-main">MORE</a>
         </div>
       </div>
     </div>

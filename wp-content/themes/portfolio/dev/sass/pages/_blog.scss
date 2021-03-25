@@ -1,0 +1,46 @@
+.blog-detail{
+
+  .card{
+    margin-bottom: 100px;
+    transition: .3s;
+    &:nth-child(2n){
+      margin-bottom:100px;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+    &__image{
+      margin: 0 0 20px;
+    }
+    &__heading{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 15px;
+    }
+    &__title{
+      padding: 0 0 0 30px;
+      font-size: 16px;
+      margin: 0 0 10px;
+
+      .fa-clone{
+        padding: 0 0 0 5px;
+        font-size: 10px;
+      }
+
+    }
+    &__category{
+      color:#aaaaaa;
+      font-size: 16px;
+      letter-spacing: .1em;
+      padding: 0 50px 0 0;
+    }
+    &__contents{
+      font-size: 14px;
+      padding: 0 20px;
+      text-align: justify;
+    }
+  }
+}
