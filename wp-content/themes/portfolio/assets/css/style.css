@@ -1282,6 +1282,7 @@ a:hover {
 
 .blog-detail .card__image {
   margin: 0 0 20px;
+  border: 1px solid #dbe2ef;
 }
 
 .blog-detail .card__heading {
@@ -1489,6 +1490,7 @@ a:hover {
 
 .works-detail__image {
   margin: 0 0 15px;
+  border: 1px solid #dbe2ef;
 }
 
 .works-detail__text {
