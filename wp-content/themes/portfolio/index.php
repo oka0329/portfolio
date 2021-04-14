@@ -2,8 +2,7 @@
 
 <div class="hero">
   <div class="hero__inner">
-    <h2 class="hero__title">唯一無二の自分の人生を行く</h2>
-    <p class="hero__text">山あり谷ありの人生<br>その第2章がここから始まる<br></p>
+    <div class="scrolldown4"><span>Scroll</span></div>
   </div>
 </div>
 <!-- main-visual -->
@@ -11,11 +10,11 @@
 <main class="main">
   <section class="l-section concept">
     <div class="l-inner">
-      <div class="heading">
+      <div class="heading js-fadein-first">
         <h3 class="heading__title">CONCEPT</h3>
         <span class="heading__subtitle">コンセプト</span>
       </div>
-      <div class="concept__body">
+      <div class="concept__body js-fadein-second">
         <div class="media">
           <div class="media__inner">
             <div class="media__image">
@@ -29,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div class="concept__link">
+      <div class="concept__link js-fadein-third">
         <a href="/about" class="button button-main"><span>MORE</span></a>
       </div>
     </div>
@@ -40,12 +39,12 @@
   $query_works = new WP_Query(
       array(
           'post_type' => 'work',
-          'posts_per_page' => 5,
+          'posts_per_page' => 10,
       ));
   ?>
   <section class="l-section works">
     <div class="l-inner">
-      <div class="works__image">
+      <div class="works__image js-fadein-first">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <?php if ( $query_works->have_posts() ) : ?>
@@ -66,12 +65,12 @@
         </div>
       </div>
       <div class="works__contents">
-        <div class="heading">
+        <div class="heading js-fadein-second">
           <h3 class="heading__title">WORKS</h3>
           <span class="heading__subtitle">制作実績</span>
         </div>
-        <p class="works__text">過去の制作実績です。<br>様々なタイプのwebサイトを<br>心を込めて制作しております。</p>
-        <div class="works__link">
+        <p class="works__text js-fadein-second">過去の制作実績です。<br>様々なタイプのwebサイトを<br>心を込めて制作しております。</p>
+        <div class="works__link js-fadein-third">
           <a href="/work" class="button button-main">MORE</a>
         </div>
       </div>
@@ -80,23 +79,23 @@
   <!-- works-section -->
 
   <?php
-  $query_works = new WP_Query(
+  $query_blog = new WP_Query(
       array(
-          'post_type' => 'blogs',
+          'post_type' => 'blog',
           'posts_per_page' => 3,
       ));
   ?>
 
   <section class="l-section blog">
     <div class="l-inner">
-      <div class="heading">
+      <div class="heading js-fadein-first">
         <h3 class="heading__title">BLOG</h3>
         <span class="heading__subtitle">ブログ</span>
       </div>
-      <div class="blog__body">
+      <div class="blog__body js-fadein-second">
         <div class="card-wrapper card-wrapper--col3">
-          <?php if ( $query_works->have_posts() ) : ?>
-          <?php while ( $query_works->have_posts() ) : $query_works->the_post();?>
+          <?php if ( $query_blog->have_posts() ) : ?>
+          <?php while ( $query_blog->have_posts() ) : $query_blog->the_post();?>
           <div class="card">
             <a href="<?php the_permalink(); ?>">
             <div class="card__body">
@@ -113,7 +112,7 @@
         <?php endwhile; endif; ?>
         </div>
       </div>
-      <div class="blog__link">
+      <div class="blog__link js-fadein-third">
         <a href="/blog" class="button button-main">MORE</a>
       </div>
     </div>
@@ -122,14 +121,14 @@
 
   <section class="l-section contact">
     <div class="l-inner">
-      <div class="heading">
+      <div class="heading js-fadein-first">
         <h3 class="heading__title">CONTACT</h3>
         <span class="heading__subtitle">お問い合わせ</span>
       </div>
-      <div class="contact__body">
+      <div class="contact__body js-fadein-first">
         <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
       </div>
-      <div class="contact__link">
+      <div class="contact__link js-fadein-second">
         <a href="/contact" class="button button-main">MORE</a>
       </div>
     </div>

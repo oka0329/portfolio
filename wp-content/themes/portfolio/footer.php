@@ -29,6 +29,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-1.10.2.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/swiper.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/local.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.waypoints.min.js"></script>
 
 </body>
 

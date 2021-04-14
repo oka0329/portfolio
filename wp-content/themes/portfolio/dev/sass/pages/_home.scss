@@ -24,13 +24,6 @@
   &__image{
     width: 60%;
     margin: 0 40px 0 0;
-  }
-  &__contents{
-    padding: 50px 0;
-    width:calc(40% - 40px);
-    text-align: center;
-    position: relative;
-
     &::after{
       width: 600px;
       height: 600px;
@@ -39,9 +32,16 @@
       background: #f4eeff;
       position: absolute;
       top:-75px;
-      left:-150px;
+      right:-550px;
       z-index: -10;
     }
+  }
+  &__contents{
+    padding: 50px 0;
+    width:calc(40% - 40px);
+    text-align: center;
+    position: relative;
+
   }
   &__text{
     font-size: 16px;

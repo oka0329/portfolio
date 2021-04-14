@@ -1,0 +1,59 @@
+/* waypoint */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*filter: blur(10px);*/
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    /*filter: blur(0);*/
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*filter: blur(10px);*/
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    /*filter: blur(0);*/
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.js-fadein-first.active {
+  -webkit-animation: fadeIn .6s ease-out .3s;
+  animation: fadeIn .6s ease-out .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.js-fadein-first {
+  opacity: 0;
+}
+.js-fadein-second.active {
+  -webkit-animation: fadeIn .6s ease-out .7s;
+  animation: fadeIn .6s ease-out .7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.js-fadein-second {
+  opacity: 0;
+}
+.js-fadein-third.active {
+  -webkit-animation: fadeIn .6s ease-out .3s;
+  animation: fadeIn .6s ease-out .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.js-fadein-third {
+  opacity: 0;
+}

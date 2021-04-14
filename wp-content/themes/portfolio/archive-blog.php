@@ -22,17 +22,13 @@
   $query_blogs = new WP_Query(
       array(
           'post_type' => 'blog',
-          'posts_per_page' => 2,
+          'posts_per_page' => 4,
           'paged' => $paged,
       ));
   ?>
 
   <section class="l-section blog-detail">
     <div class="l-inner">
-      <div class="heading">
-        <h2 class="heading__title">BLOG</h2>
-        <span class="heading__subtitle">ブログ</span>
-      </div>
       <div class="blog__body">
         <div class="card-wrapper card-wrapper--col2">
           <?php if ( $query_blogs->have_posts() ) : ?>

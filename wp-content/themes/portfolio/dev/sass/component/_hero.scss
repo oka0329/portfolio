@@ -1,10 +1,53 @@
 .hero{
   height: 100vh;
-  background: url(../image/mv01.jpg);
+  background: url(../image/mv02.jpg);
   background-position: center;
   background-size: cover;
   margin: 0 0 100px;
+  position: relative;
 
-  &__inner{
-  }
+.scrolldown4{
+  position:absolute;
+  bottom:80px;
+  right:100px;
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+@keyframes arrowmove{
+      0%{bottom:1%;}
+      50%{bottom:3%;}
+     100%{bottom:1%;}
+ }
+
+.scrolldown4 span{
+  position: absolute;
+  left:-23px;
+  bottom:30px;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+.scrolldown4:before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: -10px;
+    width: 1px;
+    height: 30px;
+    background: #fff;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+  content:"";
+  position: absolute;
+  bottom:30px;
+  right:0;
+  width:1px;
+  height: 100px;
+  background:#fff;
+}
 }

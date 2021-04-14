@@ -15,5 +15,11 @@ function my_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'my_excerpt_more');
 
+// 見出しデザイン調整
+function custom_editor_settings( $initArray ){
+ $initArray['block_formats'] = "見出し1=h2; 見出し2=h3; 見出し3=h4; 見出し4=h5; 見出し5=h6;";
+ return $initArray;
+}
+add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
 
  ?>

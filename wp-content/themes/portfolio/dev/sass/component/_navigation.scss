@@ -44,9 +44,11 @@
     font-weight: bold;
     font-size: 20px;
     padding: 10px 5px;
-    margin: 0 35px 0 0;
     transition: .5s;
     position: relative;
+    &:not(:nth-last-child(1)){
+      margin: 0 35px 0 0;
+    }
 
     @include mq(sp){
       display: block;

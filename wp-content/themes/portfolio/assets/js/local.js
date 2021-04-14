@@ -59,4 +59,27 @@ backgroundColor: '#fff' /* 入力済みの背景色 */
 }).change();
 
 
+// スクロール表示
+$('.js-fadein-first').waypoint(function(direction){
+  var activePoint = $(this.element);
+  if (direction === 'down') {
+    activePoint.addClass('active');
+  }
+},{offset : '60%'});
+
+$('.js-fadein-second').waypoint(function(direction){
+  var activePoint = $(this.element);
+  if (direction === 'down') {
+    activePoint.addClass('active');
+  }
+},{offset : '70%'});
+
+$('.js-fadein-third').waypoint(function(direction){
+  var activePoint = $(this.element);
+  if (direction === 'down') {
+    activePoint.addClass('active');
+  }
+},{offset : '80%'});
+
+
 });

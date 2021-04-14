@@ -28,10 +28,6 @@
   ?>
   <section class="l-section works-detail">
     <div class="l-inner">
-      <div class="heading">
-        <h2 class="heading__title">WORKS</h2>
-        <span class="heading__subtitle">制作実績</span>
-      </div>
       <div class="works-detail__body">
         <div class="card-wrapper card-wrapper--col2">
         <?php if ( $query_works->have_posts() ) : ?>

@@ -7,7 +7,8 @@
   &__title{
     font-size: 30px;
     letter-spacing: .1em;
-    font-weight: bold;
+    font-weight: 200;
+
     font-family: 'Raleway', sans-serif;
   }
   &__subtitle{
@@ -20,8 +21,8 @@
     display: block;
     left: 35%;
     top: 0;
-    border-left: 3px solid $base-color;
-    border-top: 3px solid $base-color;
+    border-left: 1px solid $base-color;
+    border-top: 1px solid $base-color;
     width: 20px;
     height: 20px;
   }
@@ -31,8 +32,8 @@
     display: block;
     right: 35%;
     bottom: 0;
-    border-right: 3px solid $base-color;
-    border-bottom: 3px solid $base-color;
+    border-right: 1px solid $base-color;
+    border-bottom: 1px solid $base-color;
     width: 20px;
     height: 20px;
   }

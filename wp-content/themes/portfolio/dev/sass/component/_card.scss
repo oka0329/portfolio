@@ -3,14 +3,14 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  align-items: center;
+  align-items: top;
   align-content: flex-start;
   flex-wrap: wrap;
 
   &--col2{
     .card{
-      margin: 0 40px 0 0;
-      width: calc((100% - 40px) / 2);
+      margin: 0 80px 0 0;
+      width: calc((100% - 80px) / 2);
 
     &:nth-child(2n){
       margin: 0;
