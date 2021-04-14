@@ -41,7 +41,7 @@ const checkDest = [
 
 const devPass = './dev';  //開発用フォルダパス
 const devPugPass = './dev/pug';  //開発用pugフォルダパス
-const devSassPass = './dev/sass';  //開発用sassファイルパス
+const devSassPass = './sass';  //開発用sassファイルパス
 const devTsPass = './dev/typescript';  //開発用tsファイルパス
 const checkDev = [
   devPugPass + allPug,  //開発用.pugすべて
@@ -106,7 +106,7 @@ gulp.task('ts',function(done){
 gulp.task('browser-sync',function(done){
   browserSync({
     server:{
-      baseDir: destPass,　//表示させるパス
+      baseDir: './',　//表示させるパス
     },
     port:3000
   });
