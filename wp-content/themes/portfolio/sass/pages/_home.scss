@@ -1,7 +1,7 @@
 .concept{
 
   &__body{
-    margin: 80px 0;
+    margin: 100px 0;
   }
   &__text{
     font-size: 16px;
@@ -15,7 +15,9 @@
 }
 
 .works{
-    padding-top: 200px;
+    padding: 150px 0;
+    margin: 150px 0 0;
+    background: #f4eeff;
   .l-inner{
     display: -webkit-flex;
     display: -ms-flex;
@@ -24,17 +26,6 @@
   &__image{
     width: 60%;
     margin: 0 40px 0 0;
-    &::after{
-      width: 600px;
-      height: 600px;
-      content:"";
-      display: block;
-      background: #f4eeff;
-      position: absolute;
-      top:-75px;
-      right:-550px;
-      z-index: -10;
-    }
   }
   &__contents{
     padding: 50px 0;
@@ -60,41 +51,89 @@
   &__link{
     text-align: center;
   }
-  .swiper-button-next,.swiper-button-prev{
-    color:$base-color;
-    font-weight: bold;
+  .swiper-button-next{
+    color:#fff;
     transition: .3s;
+    width: 50px;
+    height: 50px;
+    background: $base-color;
+    border-radius: 25px;
+    font-weight: bold;
+    right: -25px;
     &:hover{
       transform: scale(1.2);
+    }
+    &::after{
+      font-size: 24px;
+      position: relative;
+      left: 2px;
+    }
+  }
+  .swiper-button-prev{
+    color:#fff;
+    transition: .3s;
+    width: 50px;
+    height: 50px;
+    background: $base-color;
+    border-radius: 25px;
+    font-weight: bold;
+    left: -25px;
+    &:hover{
+      transform: scale(1.2);
+    }
+    &::after{
+      font-size: 24px;
+      position: relative;
+      right: 2px;
     }
   }
 
 }
 
 .blog{
-
   &__body{
-    margin: 100px 0 60px;
+    margin: 100px 0;
   }
   &__link{
     text-align: center;
     transition: .3s;
   }
-  .card{
+  .swiper-slide{
     &__image{
-      margin: 0 0 20px;
+      overflow: hidden;
+      img{
+        transition: all .5s;
+        &:hover{
+          transform: scale(1.2);
+          opacity:0.5;
+        }
+
+      }
     }
-    &__text{
-      font-size: 16px;
+    &:hover{
+      span{
+        text-decoration: underline;
+      }
+    }
+    span{
       text-align: center;
+      font-size: 14px;
+      display: block;
+      letter-spacing: .075em;
+      margin: 15px 0 0;
     }
+  }
+  .swiper-container-blog{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
   }
 }
 
 .contact{
   background: #f0f0f0;
   margin: 100px 0 0;
-  padding: 70px 0 ;
+  padding: 90px 0 200px;
 
   &__body{
 

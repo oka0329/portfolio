@@ -1,5 +1,14 @@
 $(function(){
 
+  $('.header-nav__link').each(function(){
+     var target = $(this).attr('href');
+     if(location.href.match(target)) {
+       $(this).parent('.header-nav__item').addClass('current');
+     } else {
+       $(this).parent('.header-nav__item').removeClass('current');
+     }
+   });
+   
   // ヘッダーの背景変化
   var fix = $(".header");
       $(window).scroll(function(){
@@ -35,7 +44,7 @@ $(window).scroll(function(){
 });
 
 // スライダー
- var mySwiper = new Swiper ('.swiper-container', {
+ var mySwiper = new Swiper ('.swiper-container-works', {
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -45,6 +54,18 @@ $(window).scroll(function(){
     },
     effect: 'cube',
  });
+
+ var mySwiper = new Swiper ('.swiper-container-blog', {
+   loop: true,
+   speed:1000,
+   autoplay:true,
+   slidesPerView: 3,
+   spaceBetween: 40,
+   centeredSlides : true,
+   pagination: '.swiper-pagination',
+   paginationClickable: true,
+ });
+
 
 $(".form-bg").on('keydown keyup keypress change focus blur', function() {
 if (jQuery(this).val() == '') {

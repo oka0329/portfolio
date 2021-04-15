@@ -45,7 +45,7 @@
   <section class="l-section works">
     <div class="l-inner">
       <div class="works__image js-fadein-first">
-        <div class="swiper-container">
+        <div class="swiper-container-works">
           <div class="swiper-wrapper">
             <?php if ( $query_works->have_posts() ) : ?>
               <?php while ( $query_works->have_posts() ) : $query_works->the_post();?>
@@ -87,35 +87,35 @@
   ?>
 
   <section class="l-section blog">
-    <div class="l-inner">
       <div class="heading js-fadein-first">
         <h3 class="heading__title">BLOG</h3>
         <span class="heading__subtitle">ブログ</span>
       </div>
       <div class="blog__body js-fadein-second">
-        <div class="card-wrapper card-wrapper--col3">
-          <?php if ( $query_blog->have_posts() ) : ?>
-          <?php while ( $query_blog->have_posts() ) : $query_blog->the_post();?>
-          <div class="card">
-            <a href="<?php the_permalink(); ?>">
-            <div class="card__body">
-              <div class="card__image">
+        <div class="swiper-container-blog">
+          <div class="swiper-wrapper">
+            <?php if ( $query_blog->have_posts() ) : ?>
+              <?php while ( $query_blog->have_posts() ) : $query_blog->the_post();?>
+            <div class="swiper-slide">
+              <a href="<?php the_permalink(); ?>">
+                <div class="swiper-slide__image">
                 <?php if(has_post_thumbnail()):?>
-                <?php the_post_thumbnail(); ?>
+                  <?php the_post_thumbnail(); ?>
                 <?php else: ?>
                 <?php endif; ?>
               </div>
-              <p class="card__text"><?php the_title(); ?></p>
+                <span><?php the_title(); ?></span>
+              </a>
             </div>
-            </a>
+          <?php endwhile; ?>
+        <?php endif; ?>
           </div>
-        <?php endwhile; endif; ?>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <div class="blog__link js-fadein-third">
         <a href="/blog" class="button button-main">MORE</a>
       </div>
-    </div>
   </section>
   <!-- blog-section -->
 

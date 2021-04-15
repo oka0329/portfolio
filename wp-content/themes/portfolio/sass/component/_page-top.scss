@@ -24,5 +24,11 @@
     border-radius: 50%;
     background-color: $base-color;
     font-size: 30px;
+    transition: .3s;
+    &:hover{
+      color:$base-color;
+      background: #fff;
+      border: 1px solid $base-color;
+    }
   }
 }
