@@ -1,7 +1,9 @@
 body{
   margin: 0;
   padding: 0;
- font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;}
+ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  color:#404040;
+}
 *,*:before,*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -9,6 +11,12 @@ body{
 }
 .dn_pc{
   display: none;
+}
+.dn_tab{
+  display: block;
+}
+.dn_sp{
+  display: block;
 }
  img {
   width: 100%;
@@ -24,4 +32,23 @@ a{
 }
 a:hover{
   opacity:0.7;
+}
+@include tab{
+  .dn_pc{
+    display: block;
+  }
+  .tab_only{
+    display: block;
+  }
+  .dn_sp{
+    display: none;
+  }
+}
+@include sp{
+  .dn_pc{
+    display: block;
+  }
+  .dn_sp{
+    display: none;
+  }
 }

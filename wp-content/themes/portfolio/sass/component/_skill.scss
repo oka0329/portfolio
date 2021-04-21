@@ -32,15 +32,21 @@ $st-level : 80%;
     margin-bottom: 120px;
   }
   &__item{
-    width: calc((100% - 200px) / 3);
+    width: calc((100% - 100px) / 3);
     height:70px;
     border-radius: 40px;
     position: relative;
     font-family: 'Raleway', sans-serif;
     transition: .5s;
+    @include tab{
+      width: calc((100% - 80px) / 3);
+    }
 
     &:not(:nth-child(3n)){
       margin-right:100px;
+      @include tab{
+        margin-right:40px;
+      }
     }
     span{
       position: absolute;

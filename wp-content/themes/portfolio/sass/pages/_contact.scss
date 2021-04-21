@@ -5,6 +5,11 @@
     line-height: 1.75;
     letter-spacing: .1em;
     margin: 0 0 80px;
+    @include tab{
+      width: 90%;
+      margin: 0 auto 60px;
+      font-size: 14px;
+    }
   }
 
   .contact-complete{

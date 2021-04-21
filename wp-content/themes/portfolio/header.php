@@ -36,13 +36,13 @@
             </ul>
           </div>
         </nav>
-      </div>
-      <div class="header-nav__trigger">
+      <div class="header__trigger">
         <button class="menu-trigger">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
+    </div>
     </header>
     <!-- header -->

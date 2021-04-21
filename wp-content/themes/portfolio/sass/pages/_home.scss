@@ -2,12 +2,19 @@
 
   &__body{
     margin: 100px 0;
+    @include tab{
+      margin: 80px 0;
+    }
   }
   &__text{
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: .05em;
     margin: 0 0 30px;
+    @include tab{
+      margin: 0 0 20px;
+      font-size: 14px;
+    }
   }
   &__link{
     text-align: center;
@@ -18,21 +25,36 @@
     padding: 150px 0;
     margin: 150px 0 0;
     background: #f4eeff;
+    @include tab{
+      margin: 80px 0 0;
+      padding: 80px 0;
+    }
   .l-inner{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    @include tab{
+      flex-direction: column-reverse;
+      margin: 0 0 70px;
+    }
   }
   &__image{
     width: 60%;
     margin: 0 40px 0 0;
+    @include tab{
+      width: 90%;
+      margin: 0 auto;
+    }
   }
   &__contents{
     padding: 50px 0;
     width:calc(40% - 40px);
     text-align: center;
     position: relative;
-
+    @include tab{
+      width: 100%;
+      padding: 0;
+    }
   }
   &__text{
     font-size: 16px;
@@ -43,9 +65,15 @@
   .heading{
     &::before{
       left: 20%;
+      @include tab{
+        left: 30%;
+      }
     }
     &::after{
       right: 20%;
+      @include tab{
+        right: 30%;
+      }
     }
   }
   &__link{
@@ -93,12 +121,15 @@
 .blog{
   &__body{
     margin: 100px 0;
+    @include tab{
+      margin: 70px 0;
+    }
   }
   &__link{
     text-align: center;
     transition: .3s;
   }
-  .swiper-slide{
+  .card{
     &__image{
       overflow: hidden;
       img{
@@ -123,17 +154,15 @@
       margin: 15px 0 0;
     }
   }
-  .swiper-container-blog{
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
 }
 
 .contact{
   background: #f0f0f0;
   margin: 100px 0 0;
   padding: 90px 0 200px;
+  @include tab{
+    padding: 60px 0 100px;
+  }
 
   &__body{
 

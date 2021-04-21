@@ -6,6 +6,11 @@
     &:nth-child(2n){
       margin-bottom:100px;
     }
+    &:nth-last-child(1){
+      @include tab{
+        margin: 0 0 0 6%;
+      }
+    }
     &:hover{
       opacity: 0.7;
       cursor:pointer;
@@ -15,6 +20,10 @@
       border: 1px solid #dbe2ef;
       width: 530px;
       height: 354px;
+      @include tab{
+        width: 100%;
+        height: auto;
+      }
     }
     &__heading{
       display: -webkit-flex;

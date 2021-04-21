@@ -1,7 +1,12 @@
 .contact-form{
-  border: 3px solid $base-color;
+  border: 2px solid $base-color;
   border-radius: 10px;
   padding: 50px 30px;
+  @include tab{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
   .flex{
     display: -webkit-flex;
     display: -ms-flex;
@@ -47,10 +52,16 @@
   &__left{
     padding: 30px;
     width: 240px;
+    @include tab{
+      padding: 20px;
+    }
   }
   &__right{
     padding: 40px;
     position: relative;
+    @include tab{
+      padding: 20px;
+    }
   }
   &__note{
     font-size: 14px;
@@ -97,6 +108,9 @@
     height: 200px;
     padding: 10px;
     font-size: 14px;
+    @include tab{
+      width: 300px;
+    }
   }
   textarea:focus{
     border: 3px solid $base-color;

@@ -12,7 +12,6 @@
     <div class="l-inner">
       <div class="heading js-fadein-first">
         <h3 class="heading__title">CONCEPT</h3>
-        <span class="heading__subtitle">コンセプト</span>
       </div>
       <div class="concept__body js-fadein-second">
         <div class="media">
@@ -67,13 +66,15 @@
       <div class="works__contents">
         <div class="heading js-fadein-second">
           <h3 class="heading__title">WORKS</h3>
-          <span class="heading__subtitle">制作実績</span>
         </div>
-        <p class="works__text js-fadein-second">過去の制作実績です。<br>様々なタイプのwebサイトを<br>心を込めて制作しております。</p>
-        <div class="works__link js-fadein-third">
+        <p class="works__text js-fadein-second">過去の制作実績です。<br>様々なタイプのwebサイトを<br class="dn_sp">心を込めて制作しております。</p>
+        <div class="works__link js-fadein-third dn_sp">
           <a href="/work" class="button button-main">MORE</a>
         </div>
       </div>
+    </div>
+    <div class="works__link js-fadein-third dn_pc">
+      <a href="/work" class="button button-main">MORE</a>
     </div>
   </section>
   <!-- works-section -->
@@ -87,34 +88,34 @@
   ?>
 
   <section class="l-section blog">
+    <div class="l-inner">
       <div class="heading js-fadein-first">
         <h3 class="heading__title">BLOG</h3>
-        <span class="heading__subtitle">ブログ</span>
       </div>
       <div class="blog__body js-fadein-second">
         <div class="swiper-container-blog">
-          <div class="swiper-wrapper">
+          <div class="card-wrapper card-wrapper--col3">
             <?php if ( $query_blog->have_posts() ) : ?>
               <?php while ( $query_blog->have_posts() ) : $query_blog->the_post();?>
-            <div class="swiper-slide">
+            <div class="card">
               <a href="<?php the_permalink(); ?>">
-                <div class="swiper-slide__image">
+                <div class="card__image">
                 <?php if(has_post_thumbnail()):?>
                   <?php the_post_thumbnail(); ?>
                 <?php else: ?>
                 <?php endif; ?>
-              </div>
+                </div>
                 <span><?php the_title(); ?></span>
               </a>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
       <div class="blog__link js-fadein-third">
         <a href="/blog" class="button button-main">MORE</a>
+      </div>
       </div>
   </section>
   <!-- blog-section -->
@@ -123,7 +124,6 @@
     <div class="l-inner">
       <div class="heading js-fadein-first">
         <h3 class="heading__title">CONTACT</h3>
-        <span class="heading__subtitle">お問い合わせ</span>
       </div>
       <div class="contact__body js-fadein-first">
         <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>

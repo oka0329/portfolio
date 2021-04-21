@@ -1,11 +1,19 @@
 .l-section{
   padding: 150px 0 0;
+  @include tab{
+    padding: 60px 0 0;
+  }
 }
 
 
 .l-inner{
   max-width: 1140px;
   margin: 0 auto;
+  @include tab{
+    padding: 0 5%;
+  }
+  @include sp{
+  }
 
   &--xs{
     max-width: 780px;

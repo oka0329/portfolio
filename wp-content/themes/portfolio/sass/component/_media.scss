@@ -1,16 +1,27 @@
 .media{
   padding: 0 50px;
+  @include tab{
+    padding: 0;
+  }
   &__inner{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-
+  @include sp{
+    display: block;
+  }
   }
   &__image{
     width: 50%;
     margin: 0 5% 0 0;
+    @include tab{
+      margin: 0;
+    }
   }
   &__body{
     padding: 30px;
+    @include tab{
+      padding: 0 0 0 30px;
+    }
   }
 }

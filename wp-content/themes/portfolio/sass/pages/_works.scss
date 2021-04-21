@@ -1,17 +1,24 @@
 .works-detail{
   padding: 0;
   &__body{
-    padding: 80px 0 0;
+    padding: 80px 0;
+    @include tab{
+      padding: 80px 0 40px;
+    }
   }
   .card{
     margin-bottom: 70px;
     padding: 10px 10px 20px;
     transition: .3s;
-    &:nth-child(2n){
-      margin-bottom:70px;
+    @include tab{
+      margin-bottom: 50px;
+      padding: 0;
     }
     &:hover{
       opacity: 0.7;
+    }
+    &:nth-child(2n){
+      margin-bottom:50px;
     }
   }
   &__image{
@@ -19,6 +26,10 @@
     width: 530px;
     height: 354px;
     border: 1px solid #dbe2ef;
+    @include tab{
+      width: 100%;
+      height: auto;
+    }
   }
   &__text{
     font-size: 14px;

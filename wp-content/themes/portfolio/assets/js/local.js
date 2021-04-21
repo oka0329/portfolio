@@ -8,7 +8,7 @@ $(function(){
        $(this).parent('.header-nav__item').removeClass('current');
      }
    });
-   
+
   // ヘッダーの背景変化
   var fix = $(".header");
       $(window).scroll(function(){
@@ -59,7 +59,19 @@ $(window).scroll(function(){
    loop: true,
    speed:1000,
    autoplay:true,
-   slidesPerView: 3,
+   breakpoints: {
+    350: {
+      slidesPerView: 1,
+      centeredSlides : false,
+    },
+    480: {
+      slidesPerView: 2,
+      centeredSlides : false,
+    },
+    770: {
+      slidesPerView: 3,
+    }
+  },
    spaceBetween: 40,
    centeredSlides : true,
    pagination: '.swiper-pagination',

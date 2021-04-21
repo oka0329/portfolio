@@ -1,18 +1,20 @@
-$breakpoints : (
-"sp" : "screen and (max-width: 599px)",
-"tab" : "screen and (max-width: 1024px)",
-) !default;
 
-@mixin mq($breakpoint: md){
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 480px;  // スマホ
 
-  @if $breakpoints = sp {
-    @media screen and(max-width:599px){
-      @content;
-    }
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
   }
-  @if $breakpoints = tab {
-    @media screen and(max-width:1024px){
-      @content;
-    }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
   }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
   }
+}
