@@ -2,6 +2,7 @@
 
 <div class="sub-hero">
   <h2 class="sub-hero__title">BLOG</h2>
+  <div class="scrolldown4"><span>Scroll</span></div>
 </div>
 <div class="breadcrumb">
   <div class="l-inner">
@@ -29,7 +30,10 @@
 
   <section class="l-section blog-detail">
     <div class="l-inner">
-      <div class="blog__body">
+      <div class="heading js-fadein-first">
+        <h3 class="heading__title">BLOG</h3>
+      </div>
+      <div class="blog__body js-fadein-first">
         <div class="card-wrapper card-wrapper--col2">
           <?php if ( $query_blogs->have_posts() ) : ?>
           <?php while ( $query_blogs->have_posts() ) : $query_blogs->the_post();?>
@@ -85,14 +89,13 @@
 
   <section class="l-section contact">
     <div class="l-inner">
-      <div class="heading">
+      <div class="heading js-fadein-first">
         <h2 class="heading__title">CONTACT</h2>
-        <span class="heading__subtitle">お問い合わせ</span>
       </div>
-      <div class="contact__body">
+      <div class="contact__body js-fadein-first">
         <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
       </div>
-      <div class="contact__link">
+      <div class="contact__link js-fadein-first">
         <a href="/contact" class="button button-main">MORE</a>
       </div>
     </div>

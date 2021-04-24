@@ -4,11 +4,23 @@
   margin: 0 0 70px;
   border-bottom: 1px solid #00A678;
   padding-bottom: 20px;
+  @include tab{
+    margin:0 0 50px;
+  }
+  @include sp{
+    margin: 0 0 50px;
+  }
 
   &__title{
     font-size: 64px;
     letter-spacing: .05em;
-    font-weight: 200;
+    font-weight: 400;
     font-family: 'Raleway', sans-serif;
+    @include tab{
+      font-size: 50px;
+    }
+    @include sp{
+      font-size: 34px;
+    }
   }
 }

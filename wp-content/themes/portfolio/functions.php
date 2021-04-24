@@ -5,7 +5,11 @@ add_theme_support('post-thumbnails');
 
 //概要（抜粋）の文字数調整
 function my_excerpt_length($length) {
-	return 70;
+	if(wp_is_mobile()){
+		return 40;
+	}else{
+		return 70;
+	}
 }
 add_filter('excerpt_length', 'my_excerpt_length');
 

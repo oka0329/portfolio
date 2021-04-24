@@ -1,52 +1,72 @@
 .hero{
   height: 100vh;
-  background: url(../image/mv02.jpg);
+  background: url(../image/mv07.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
+  color:#fff;
+  @include sp{
+    height: 80vh;
+  }
 
-.scrolldown4{
-  position:absolute;
-  bottom:80px;
-  right:100px;
-  animation: arrowmove 1s ease-in-out infinite;
-}
-
-@keyframes arrowmove{
-      0%{bottom:1%;}
-      50%{bottom:3%;}
-     100%{bottom:1%;}
- }
-
-.scrolldown4 span{
-  position: absolute;
-  left:-23px;
-  bottom:30px;
-  color: #fff;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  -ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}
-.scrolldown4:before {
-    content: "";
+  &__inner{
     position: absolute;
-    bottom: 30px;
-    right: -10px;
-    width: 1px;
-    height: 30px;
-    background: #fff;
-    transform: skewX(-31deg);
-}
+    top:60%;
+    left:5%;
+    width: 60%;
+    text-align: center;
+    background: rgba(64,64,64,0.5);
+    overflow: hidden;
+    opacity:0;
+    padding: 20px;
+    text-align: left;
+    @include tab{
+      width: 80%;
+    }
+    @include sp{
+      width: 90%;
+      top: 65%;
+      padding: 5px;
+    }
+    &.active{
+      -webkit-animation: fadeInLeft .5s ease-out ;
+      animation: fadeInLeft .5s ease-out ;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
+  &__title{
+    font-size: 80px;
+    opacity: 0;
+    @include tab{
+      font-size: 54px;
+    }
+    @include sp{
+      font-size: 32px;
+      margin: 0 0 5px;
+    }
+    &.active{
+      -webkit-animation: fadeInLeft .5s ease-out .8s;
+      animation: fadeInLeft .5s ease-out .8s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
+  &__text{
+    font-size: 60px;
+    opacity: 0;
+    @include tab{
+      font-size: 40px;
+    }
+    @include sp{
+      font-size: 24px;
+    }
+    &.active{
+      -webkit-animation: fadeInLeft .5s ease-out 1.3s;
+      animation: fadeInLeft .5s ease-out 1.3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
 
-.scrolldown4:after{
-  content:"";
-  position: absolute;
-  bottom:30px;
-  right:0;
-  width:1px;
-  height: 100px;
-  background:#fff;
-}
 }

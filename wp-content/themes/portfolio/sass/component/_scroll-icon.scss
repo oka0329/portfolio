@@ -1,0 +1,56 @@
+.scrolldown4{
+  position:absolute;
+  bottom:80px;
+  right:100px;
+  animation: arrowmove-hero 1s ease-in-out infinite;
+  @include tab{
+    right: 45px;
+  }
+}
+
+@keyframes arrowmove-hero{
+      0%{bottom:1%;}
+      50%{bottom:3%;}
+     100%{bottom:1%;}
+ }
+
+.scrolldown4 span{
+  position: absolute;
+  left:-23px;
+  bottom:30px;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    @include tab{
+      bottom: 5px;
+    }
+}
+.scrolldown4:before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: -10px;
+    width: 1px;
+    height: 30px;
+    background: #fff;
+    transform: skewX(-31deg);
+    @include tab{
+      bottom: 5px;
+    }
+}
+
+.scrolldown4:after{
+  content:"";
+  position: absolute;
+  bottom:30px;
+  right:0;
+  width:1px;
+  height: 100px;
+  background:#fff;
+  @include tab{
+    bottom: 5px;
+  }
+}

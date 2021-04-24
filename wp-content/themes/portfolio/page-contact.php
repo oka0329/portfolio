@@ -52,6 +52,7 @@ elseif(!empty($_POST['btn_submit'])){
 
 <div class="sub-hero">
   <h2 class="sub-hero__title">CONTACT</h2>
+  <div class="scrolldown4"><span>Scroll</span></div>
 </div>
 <div class="breadcrumb">
   <div class="l-inner">
@@ -70,18 +71,17 @@ elseif(!empty($_POST['btn_submit'])){
 </div>
 <main class="main">
   <section class="l-section contact-detail">
+    <div class="l-inner">
+    <div class="heading js-fadein-first">
+      <h3 class="heading__title">CONTACT</h3>
+    </div>
     <div class="l-inner l-inner--xs">
 
   <?php if($page_flag === 0):?>
   <!-- お問い合わせフォーム画面 -->
 
   <p class="contact-detail__text">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
-    <div class="contact-detail__process">
-      <div class="process-hop"></div>
-      <div class="process-step"></div>
-      <div class="process-jump"></div>
-    </div>
-    <form action="/contact" method="post" class="contact-form">
+    <form action="/contact" method="post" class="contact-form js-fadein-first">
       <div class="contact-detail__table">
         <table>
           <p class="table__title">お問い合わせフォーム</p>
@@ -103,7 +103,7 @@ elseif(!empty($_POST['btn_submit'])){
           </tr>
           <tr>
             <td class="contact-form__left">お問い合わせ項目</td>
-            <td  class="contact-form__right">
+            <td  class="contact-form__right pa-l-0">
               <label><input type="radio" name="item" value="webサイト制作依頼">webサイト制作依頼</label><br>
               <label><input type="radio" name="item" value="お見積り">お見積り</label><br>
               <label><input type="radio" name="item" value="ご相談">ご相談</label><br>
@@ -116,10 +116,14 @@ elseif(!empty($_POST['btn_submit'])){
               <p class="contact-form__note"><?php if(!empty($error['main'])){echo $error['main'];} ?></p>
               <textarea name="main"  class="form-bg"><?php if(!empty($main)){echo $main;} ?></textarea></td>
           </tr>
+          <tr class="ta-c">
+            <td class="d-b">
+            <div class="contact-form__submit">
+              <input type="submit" name="btn_confirm" value="確認する"class="contact-form__button button button-main"></input>
+            </div>
+            </td>
+          </tr>
         </table>
-        <div class="contact-form__submit">
-          <input type="submit" name="btn_confirm" value="確認する"class="contact-form__button button button-main"></input>
-        </div>
       </div>
     </form>
 
@@ -129,11 +133,6 @@ elseif(!empty($_POST['btn_submit'])){
     <!-- お問い合わせ内容確認画面 -->
     <?php if($page_flag === 1): ?>
 
-    <div class="contact-detail__process">
-      <div class="process-hop"></div>
-      <div class="process-step"></div>
-      <div class="process-jump"></div>
-    </div>
     <form action="/contact" method="post" class="contact-form">
       <div class="contact-detail__table">
         <table>
@@ -180,7 +179,6 @@ elseif(!empty($_POST['btn_submit'])){
 
     <!-- お問い合わせ完了画面 -->
     <?php if($page_flag === 2): ?>
-
       <div class="contact-complete">
         <p class="contact-complete__title">お問い合わせありがとうございます</p>
         <p class="contact-complete__text">ご記入いただいた内容は正常に送信されました。<br>確認のため、お客様のメールアドレスへ自動返信メールをお送りしております。<br>お問い合わせいただいた内容につきましては、近日中にご返信させていただきます。</p>
@@ -237,6 +235,7 @@ elseif(!empty($_POST['btn_submit'])){
     <!-- 自動返信メールここまで -->
 
     <?php endif; ?>
+    </div>
     </div>
   </section>
 </main>

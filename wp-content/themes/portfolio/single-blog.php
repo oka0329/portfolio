@@ -2,6 +2,7 @@
 
 <div class="sub-hero">
   <p class="sub-hero__title">BLOG</p>
+  <div class="scrolldown4"><span>Scroll</span></div>
 </div>
 <div class="breadcrumb">
   <div class="l-inner">
@@ -44,6 +45,23 @@
       <a href="/blog" class="post__link--top">記事一覧へ→</a>
     </div>
   </section>
+  <!-- blog-main-section -->
+
+  <section class="l-section contact">
+    <div class="l-inner">
+      <div class="heading js-fadein-first">
+        <h2 class="heading__title">CONTACT</h2>
+      </div>
+      <div class="contact__body js-fadein-first">
+        <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+      </div>
+      <div class="contact__link js-fadein-first">
+        <a href="/contact" class="button button-main">MORE</a>
+      </div>
+    </div>
+  </section>
+  <!-- contact-section -->
+
 </main>
 
 <?php get_footer(); ?>

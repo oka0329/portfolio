@@ -2,10 +2,12 @@
 
 <div class="hero">
   <div class="hero__inner">
-    <div class="scrolldown4"><span>Scroll</span></div>
+    <h2 class="hero__title">全てはここから始まる</h2>
+    <p class="hero__text">始まりのステージ</p>
   </div>
+  <div class="scrolldown4"><span>Scroll</span></div>
 </div>
-<!-- main-visual -->
+<!-- hero -->
 
 <main class="main">
   <section class="l-section concept">
@@ -13,26 +15,25 @@
       <div class="heading js-fadein-first">
         <h3 class="heading__title">CONCEPT</h3>
       </div>
-      <div class="concept__body js-fadein-second">
-        <div class="media">
-          <div class="media__inner">
-            <div class="media__image">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/image/img02.jpg" alt="">
-            </div>
-            <div class="media__body">
-              <p class="concept__text">ただ単にを作るだけでなく、<br>お客様の願い・気持ち・想いを少しでも<br>サイトを訪れた方々へ届けられるように</p>
-              <p class="concept__text">些細なことかもしれない<br>気づかれないようなことかもしれない</p>
-              <p class="concept__text">そんな細かいところまで気を遣い<br>最高な作品を作り上げることを約束します</p>
-            </div>
+      <div class="concept__body js-fadeinright-second">
+        <div class="concept__contents">
+          <h4 class="concept__title">正確で丁寧をモットーに</h4>
+          <p class="concept__text">人と人をつなぐ架け橋となる<br class="dn_pc">webサイトを作りたい。<br>お客様の想いをユーザーへ伝えるために、<br class="dn_pc">少しでも力になれるよう<br class="dn_pc">お手伝いをさせて頂きます。</p>
+          <div class="concept__link dn_sp js-fadeinright-third">
+            <a href="/about" class="button button-main">MORE</a>
           </div>
         </div>
-      </div>
-      <div class="concept__link js-fadein-third">
-        <a href="/about" class="button button-main"><span>MORE</span></a>
+        <div class="concept__image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/image/mv06.jpg" alt="">
+        </div>
+        <div class="concept__link dn_pc js-fadeinright-third">
+          <a href="/about" class="button button-main">MORE</a>
+        </div>
+
       </div>
     </div>
   </section>
-  <!-- about-section -->
+  <!-- concept-section -->
 
   <?php
   $query_works = new WP_Query(
@@ -67,8 +68,8 @@
         <div class="heading js-fadein-second">
           <h3 class="heading__title">WORKS</h3>
         </div>
-        <p class="works__text js-fadein-second">過去の制作実績です。<br>様々なタイプのwebサイトを<br class="dn_sp">心を込めて制作しております。</p>
-        <div class="works__link js-fadein-third dn_sp">
+        <p class="works__text js-fadeinright-second">過去の制作実績です。<br>様々なタイプのwebサイトを<br class="dn_sp">心を込めて制作しております。</p>
+        <div class="works__link js-fadeinright-third dn_sp">
           <a href="/work" class="button button-main">MORE</a>
         </div>
       </div>
@@ -80,10 +81,15 @@
   <!-- works-section -->
 
   <?php
+  if(wp_is_mobile()){
+    $post_num = 2;
+  }else{
+    $post_num = 3;
+  }
   $query_blog = new WP_Query(
       array(
           'post_type' => 'blog',
-          'posts_per_page' => 3,
+          'posts_per_page' => $post_num,
       ));
   ?>
 

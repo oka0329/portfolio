@@ -1,23 +1,73 @@
 .concept{
 
   &__body{
-    margin: 100px 0;
+    position: relative;
+    margin: 50px 0;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
     @include tab{
-      margin: 80px 0;
+      margin: 80px 0 30px;
+    }
+    @include sp{
+      display: block;
+      margin: 0 0 30px;
+    }
+  }
+  &__contents{
+    margin: 0 60px 0 0;
+    @include tab{
+      margin: 0 40px 0 0;
+    }
+    @include sp{
+      margin: 0;
+    }
+  }
+  &__image{
+    width: 390px;
+    @include tab{
+      width: 270px;
+    }
+    @include sp{
+      width: 90%;
+      margin: 0 auto 50px;
+    }
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: .05em;
+    margin: 0 0 30px;
+    @include tab{
+      margin: 0 0 20px;
+      font-size: 20px;
+    }
+    @include sp{
+      text-align: center;
+      margin: 0 0 30px;
     }
   }
   &__text{
     font-size: 16px;
     line-height: 1.75;
-    letter-spacing: .05em;
+    letter-spacing: .1em;
     margin: 0 0 30px;
     @include tab{
-      margin: 0 0 20px;
+      margin: 0 0 30px;
       font-size: 14px;
+    }
+    @include sp{
+      margin: 0 0 30px;
+      text-align: center;
+      line-height: 2.25;
     }
   }
   &__link{
-    text-align: center;
+    text-align: left;
+    @include sp{
+      text-align: center;
+    }
   }
 }
 
@@ -79,6 +129,9 @@
   &__link{
     text-align: center;
   }
+  .swiper-container-works{
+    overflow: hidden;
+  }
   .swiper-button-next{
     color:#fff;
     transition: .3s;
@@ -88,6 +141,10 @@
     border-radius: 25px;
     font-weight: bold;
     right: -25px;
+    @include sp{
+      width: 40px;
+      height: 40px;
+    }
     &:hover{
       transform: scale(1.2);
     }
@@ -106,6 +163,10 @@
     border-radius: 25px;
     font-weight: bold;
     left: -25px;
+    @include sp{
+      width: 40px;
+      height: 40px;
+    }
     &:hover{
       transform: scale(1.2);
     }
@@ -122,7 +183,7 @@
   &__body{
     margin: 100px 0;
     @include tab{
-      margin: 70px 0;
+      margin: 70px 0 0;
     }
   }
   &__link{
@@ -131,16 +192,11 @@
   }
   .card{
     &__image{
-      overflow: hidden;
-      img{
-        transition: all .5s;
+      transition: .3s;
         &:hover{
-          transform: scale(1.2);
           opacity:0.5;
         }
-
       }
-    }
     &:hover{
       span{
         text-decoration: underline;
@@ -148,7 +204,7 @@
     }
     span{
       text-align: center;
-      font-size: 14px;
+      font-size: 16px;
       display: block;
       letter-spacing: .075em;
       margin: 15px 0 0;
@@ -173,7 +229,9 @@
     line-height: 2.25;
     letter-spacing: .1em;
     margin: 0 0 40px;
-
+    @include sp{
+      line-height: 1.5;
+    }
   }
 
   &__link{

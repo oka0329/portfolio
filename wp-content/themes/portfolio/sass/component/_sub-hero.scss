@@ -1,6 +1,6 @@
 .sub-hero{
   height: 350px;
-  background: url(../image/mv04.jpg);
+  background: url(../image/mv07.jpg);
   background-position: center;
   background-size: cover;
   display: -webkit-flex;
@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__title{
     font-family: 'Raleway', sans-serif;
@@ -16,5 +17,8 @@
     letter-spacing: .05em;
     font-weight: 900;
     color:#fff;
+    @include sp{
+      font-size: 50px;
+    }
   }
 }

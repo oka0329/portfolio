@@ -1,14 +1,22 @@
 .blog-detail{
-    padding: 0;
   .card{
     margin-bottom: 100px;
     transition: .3s;
+    @include tab{
+      margin-bottom: 50px;
+    }
     &:nth-child(2n){
       margin-bottom:100px;
+      @include tab{
+        margin-bottom: 50px;
+      }
     }
     &:nth-last-child(1){
       @include tab{
         margin: 0 0 0 6%;
+      }
+      @include sp{
+        margin: 0 0 60px;
       }
     }
     &:hover{
@@ -32,11 +40,18 @@
       justify-content: space-between;
       align-items: center;
       margin: 0 0 15px;
+      @include tab{
+        margin: 0 0 10px;
+      }
     }
     &__title{
       padding: 0 0 0 30px;
       font-size: 16px;
       margin: 0 0 10px;
+      @include tab{
+        padding: 0;
+        margin: 0 0 5px;
+      }
 
       .fa-clone{
         padding: 0 0 0 5px;
@@ -50,11 +65,17 @@
       letter-spacing: .1em;
       padding: 0 0 0 100px;
       margin: 0;
+      @include tab{
+        padding: 0;;
+      }
     }
     &__contents{
       font-size: 14px;
       padding: 0 20px;
       text-align: justify;
+      @include tab{
+        padding: 0;
+      }
     }
   }
 }

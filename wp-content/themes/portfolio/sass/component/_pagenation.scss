@@ -23,7 +23,7 @@
       margin: 0 30px 0 0;
     }
     &.current{
-      background: linear-gradient(to right,$base-color,$sub-color 90%);
+      background: $base-color;
       color:#fff;
       transform: scale(1.3);
     }

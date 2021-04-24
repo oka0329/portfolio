@@ -52,7 +52,7 @@ $(window).scroll(function(){
     autoplay: {
       delay:4000,
     },
-    effect: 'cube',
+    effect: 'slide',
  });
 
  var mySwiper = new Swiper ('.swiper-container-blog', {
@@ -93,26 +93,37 @@ backgroundColor: '#fff' /* 入力済みの背景色 */
 
 
 // スクロール表示
-$('.js-fadein-first').waypoint(function(direction){
-  var activePoint = $(this.element);
-  if (direction === 'down') {
-    activePoint.addClass('active');
-  }
-},{offset : '60%'});
-
-$('.js-fadein-second').waypoint(function(direction){
+$('.js-fadein-first,.js-fadeinleft-first,.js-fadeinright-first').waypoint(function(direction){
   var activePoint = $(this.element);
   if (direction === 'down') {
     activePoint.addClass('active');
   }
 },{offset : '70%'});
 
-$('.js-fadein-third').waypoint(function(direction){
+$('.js-fadein-second,.js-fadeinleft-second,.js-fadeinright-second').waypoint(function(direction){
   var activePoint = $(this.element);
   if (direction === 'down') {
     activePoint.addClass('active');
   }
-},{offset : '80%'});
+},{offset : '70%'});
 
+$('.js-fadein-third,.js-fadeinleft-third,.js-fadeinright-third').waypoint(function(direction){
+  var activePoint = $(this.element);
+  if (direction === 'down') {
+    activePoint.addClass('active');
+  }
+},{offset : '70%'});
+
+window.onload = function() {
+  $('.hero__inner').addClass('active');
+  $('.hero__title').addClass('active');
+  $('.hero__text').addClass('active');
+};
+
+
+$(".skill__item").click(function(){
+  $('.skill__item').removeClass('active');
+ $(this).addClass("active");
+});
 
 });

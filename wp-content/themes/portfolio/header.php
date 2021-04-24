@@ -37,11 +37,11 @@
           </div>
         </nav>
       <div class="header__trigger">
-        <button class="menu-trigger">
+        <div class="menu-trigger">
           <span></span>
           <span></span>
           <span></span>
-        </button>
+        </div>
       </div>
     </div>
     </header>

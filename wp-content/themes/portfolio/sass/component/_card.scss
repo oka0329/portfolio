@@ -6,20 +6,31 @@
   align-items: top;
   align-content: flex-start;
   flex-wrap: wrap;
+  @include sp{
+    display: block;
+  }
 
   &--col2{
     .card{
-      margin: 0 80px 0 0;
+      margin: 0 80px 80px 0;
       width: calc((100% - 80px) / 2);
       @include tab{
         width: 47%;
-        margin: 0;
+        margin: 0 0 50px;
       }
+      @include sp{
+        margin: 0 0 60px 0;
+        width:100%;
+      }
+
 
     &:nth-child(2n){
       margin: 0;
       @include tab{
         margin: 0 0 0 6%;
+      }
+      @include sp{
+        margin: 0 0 60px;
       }
     }
     }
@@ -28,9 +39,28 @@
     .card{
       margin: 0 30px 0 0;
       width: calc((100% - 60px) / 3);
+      @include tab{
+        margin: 0 60px 60px 0;
+        width:calc((100% - 60px) / 2);
+      }
+      @include sp{
+        margin: 0 0 60px 0;
+        width:100%;
+      }
 
     &:nth-child(3n){
       margin: 0;
+      @include tab{
+        margin: 0 60px 60px 0;
+      }
+      @include sp{
+        margin: 0 0 60px 0;
+      }
+    }
+    &:nth-child(2n){
+      @include tab{
+        margin: 0 0 60px;
+      }
     }
     }
   }
