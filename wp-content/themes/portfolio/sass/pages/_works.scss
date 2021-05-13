@@ -13,11 +13,17 @@
       margin-bottom: 50px;
       padding: 0;
     }
+    @include tab{
+      margin-bottom: 80px;
+    }
     &:hover{
       opacity: 0.7;
     }
     &:nth-child(2n){
       margin-bottom:50px;
+      @include sp{
+        margin-bottom: 80px;
+      }
     }
   }
   &__image{
@@ -70,7 +76,7 @@
       display: block;
       line-height: 1.4;
       span{
-        font-size: 12px;
+        font-size: 14px;
         color:#aaaaaa;
       }
     }

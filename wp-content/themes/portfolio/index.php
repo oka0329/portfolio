@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<!-- hero -->
 <div class="hero">
   <div class="hero__inner">
     <h2 class="hero__title">全てはここから始まる</h2>
@@ -7,7 +8,7 @@
   </div>
   <div class="scrolldown4"><span>Scroll</span></div>
 </div>
-<!-- hero -->
+<!-- heroここまで -->
 
 <main class="main">
   <section class="l-section concept">
@@ -15,21 +16,20 @@
       <div class="heading js-fadein-first">
         <h3 class="heading__title">CONCEPT</h3>
       </div>
-      <div class="concept__body js-fadeinright-second">
+      <div class="concept__body js-fadein-second">
         <div class="concept__contents">
           <h4 class="concept__title">正確で丁寧をモットーに</h4>
           <p class="concept__text">人と人をつなぐ架け橋となる<br class="dn_pc">webサイトを作りたい。<br>お客様の想いをユーザーへ伝えるために、<br class="dn_pc">少しでも力になれるよう<br class="dn_pc">お手伝いをさせて頂きます。</p>
-          <div class="concept__link dn_sp js-fadeinright-third">
+          <div class="concept__link dn_sp js-fadein-third">
             <a href="/about" class="button button-main">MORE</a>
           </div>
         </div>
         <div class="concept__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/image/mv06.jpg" alt="">
         </div>
-        <div class="concept__link dn_pc js-fadeinright-third">
+        <div class="concept__link dn_pc js-fadein-third">
           <a href="/about" class="button button-main">MORE</a>
         </div>
-
       </div>
     </div>
   </section>
@@ -68,8 +68,8 @@
         <div class="heading js-fadein-second">
           <h3 class="heading__title">WORKS</h3>
         </div>
-        <p class="works__text js-fadeinright-second">過去の制作実績です。<br>様々なタイプのwebサイトを<br class="dn_sp">心を込めて制作しております。</p>
-        <div class="works__link js-fadeinright-third dn_sp">
+        <p class="works__text js-fadein-second">過去の制作実績です。<br>様々なタイプのwebサイトを<br>心を込めて制作しております。</p>
+        <div class="works__link js-fadein-third dn_sp">
           <a href="/work" class="button button-main">MORE</a>
         </div>
       </div>

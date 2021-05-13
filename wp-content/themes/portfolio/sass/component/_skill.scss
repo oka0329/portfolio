@@ -37,6 +37,9 @@ $st-level : 70%;
     @include tab{
       margin: 0 0 30px;
     }
+    @include sp{
+      font-size: 22px;
+    }
   }
   &__text{
     font-size: 16px;
@@ -53,6 +56,9 @@ $st-level : 70%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @include sp{
+      display: block;
+    }
   }
   &__item{
     width: calc((100% - 160px) / 3);
@@ -64,11 +70,18 @@ $st-level : 70%;
     @include tab{
       width: calc((100% - 80px) / 3);
     }
+    @include sp{
+      width: 90%;
+      margin: 0 auto 30px;
+    }
 
     &:not(:nth-child(3n)){
       margin-right:80px;
       @include tab{
         margin-right:40px;
+      }
+      @include sp{
+        margin-right:auto;
       }
     }
     span{
@@ -109,6 +122,9 @@ $st-level : 70%;
     &:hover{
       cursor: pointer;
       transform: scale(1.2);
+      @include sp{
+        transform: scale(1.1);
+      }
       &::before{
         opacity: 1;
         font-size: 24px;

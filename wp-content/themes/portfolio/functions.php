@@ -15,7 +15,7 @@ add_filter('excerpt_length', 'my_excerpt_length');
 
 //概要（抜粋）の省略文字
 function my_excerpt_more($more) {
-	return '　　【続きを読む・・】';
+	return '【・・・】';
 }
 add_filter('excerpt_more', 'my_excerpt_more');
 

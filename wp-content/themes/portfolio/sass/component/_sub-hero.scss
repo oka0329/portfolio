@@ -11,6 +11,8 @@
   position: relative;
 
   &__title{
+    background: rgba(64, 64, 64, 0.6);
+    padding: 10px 20px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 60px;
@@ -18,7 +20,7 @@
     font-weight: 900;
     color:#fff;
     @include sp{
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 }

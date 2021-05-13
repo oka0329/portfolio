@@ -12,6 +12,12 @@
     bottom: 30px;
     right: 30px;
   }
+  @include sp{
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+    right: 20px;
+  }
   &:hover{
     cursor: pointer;
   }
@@ -32,6 +38,11 @@
       color:$base-color;
       background: #fff;
       border: 1px solid $base-color;
+    }
+    @include sp{
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
     }
   }
 }

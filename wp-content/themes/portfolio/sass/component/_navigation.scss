@@ -2,40 +2,30 @@
 
   font-family: 'Raleway', sans-serif;
   position: relative;
-  @include tab{
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 10;
-    background-image: linear-gradient(135deg, #7633a4, #250d65);
-    height:100%;
-    width: 100%;
-    opacity:0;
-    visibility: hidden;
-
-  }
   @include sp{
     position: fixed;
     top:0;
     left:0;
     z-index: 10;
-    background-image: linear-gradient(135deg, #7633a4, #250d65);
+    background: #404040;
     height:100%;
     width: 100%;
     opacity:0;
-    transition: opacity .5s ease;
+    transform: translateX(-500px);
+    transition: all .5s ease;
     visibility: hidden;
+    &.active{
+      opacity: 1;
+      transform: translateX(0);
+      visibility:visible;
+    }
   }
 
   &__inner{
     @include sp{
       width: 100%;
       height: 100%;
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 100px 0 0;
     }
   }
 
@@ -59,32 +49,56 @@
     transition: .5s;
     position: relative;
     &:not(:nth-last-child(1)){
-      margin: 0 35px 0 0;
+      margin: 0 10px 0 0;
+      @include tab{
+        margin-right: 0;
+      }
+      @include sp{
+        margin-right: 0;
+      }
     }
     &:hover{
-      transform: scale(1.2);
+      a{
+        color:$base-color;
+      }
       &::after{
         width:100%;
       }
+      @include sp{
+        transform: none;
+      }
     }
     &.current{
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid $base-color;
       animation-delay:3s;
-      transform: scale(1.3);
       opacity: 1;
+      a{
+        color:$base-color;
+        @include sp{
+          color:#fff;
+        }
+      }
       &:hover{
         &::after{
           width: 0;
         }
       }
+      @include sp{
+        border-bottom: 1px solid #fff;
+        transform: none;
+      }
     }
 
     @include sp{
       display: block;
-      width: 100%;
-      text-align: center;
-      font-size: 16px;
-      margin: 0 0 20px;
+      width: 90%;
+      text-align: left;
+      font-size: 20px;
+      margin: 0 auto 30px;
+      border-bottom: 1px solid #fff;
+      font-weight: lighter;
+      height: 60px;
+      padding: 0;
     }
 
     &::after{
@@ -92,19 +106,36 @@
       display: block;
       content:"";
       width:0;
-      height:3px;
-      background: #fff;
-      bottom:-5px;
+      height:2px;
+      background: $base-color;
+      bottom:0;
       left:0;
       transition: width .3s;
+      @include sp{
+        display: none;
+      }
     }
-
+    i{
+      position: absolute;
+      top: 22px;
+      right: 30px;
+    }
   }
 
   &__link{
     color:#fff;
-    padding: 10px 5px;
+    @include tab{
+      padding: 5px 10px;
+    }
+    @include sp{
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 18px 20px;
+    }
     letter-spacing: .1em;
-
+    padding: 20px;
   }
 }

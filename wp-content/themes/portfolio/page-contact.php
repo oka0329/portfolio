@@ -75,12 +75,10 @@ elseif(!empty($_POST['btn_submit'])){
     <div class="heading js-fadein-first">
       <h3 class="heading__title">CONTACT</h3>
     </div>
-    <div class="l-inner l-inner--xs">
-
   <?php if($page_flag === 0):?>
   <!-- お問い合わせフォーム画面 -->
 
-  <p class="contact-detail__text">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
+  <p class="contact-detail__text js-fadein-first">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
     <form action="/contact" method="post" class="contact-form js-fadein-first">
       <div class="contact-detail__table">
         <table>
@@ -103,7 +101,7 @@ elseif(!empty($_POST['btn_submit'])){
           </tr>
           <tr>
             <td class="contact-form__left">お問い合わせ項目</td>
-            <td  class="contact-form__right pa-l-0">
+            <td  class="contact-form__right">
               <label><input type="radio" name="item" value="webサイト制作依頼">webサイト制作依頼</label><br>
               <label><input type="radio" name="item" value="お見積り">お見積り</label><br>
               <label><input type="radio" name="item" value="ご相談">ご相談</label><br>
@@ -128,7 +126,7 @@ elseif(!empty($_POST['btn_submit'])){
     </form>
 
   <?php endif; ?>
-    <!-- お問い合わせフォーム画面 -->
+    <!-- お問い合わせフォーム画面ここまで -->
 
     <!-- お問い合わせ内容確認画面 -->
     <?php if($page_flag === 1): ?>
@@ -235,7 +233,6 @@ elseif(!empty($_POST['btn_submit'])){
     <!-- 自動返信メールここまで -->
 
     <?php endif; ?>
-    </div>
     </div>
   </section>
 </main>

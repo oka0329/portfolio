@@ -25,7 +25,10 @@
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
     @include tab{
-      bottom: 5px;
+      bottom: 30px;
+    }
+    @include sp{
+      bottom: 20px;
     }
 }
 .scrolldown4:before {
@@ -38,7 +41,10 @@
     background: #fff;
     transform: skewX(-31deg);
     @include tab{
-      bottom: 5px;
+      bottom: 30px;
+    }
+    @include sp{
+      bottom: 20px;
     }
 }
 
@@ -51,6 +57,9 @@
   height: 100px;
   background:#fff;
   @include tab{
-    bottom: 5px;
+    bottom: 30px;
+  }
+  @include sp{
+    bottom: 20px;
   }
 }

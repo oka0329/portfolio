@@ -7,16 +7,22 @@
   z-index: 999;
   position: fixed;
   @include tab{
-    padding: 20px 30px;
+    padding: 30px 20px;
   }
   &.active{
-    background: rgba(64,64,64,0.7);
+    background: #404040;
     padding: 10px 50px;
     @include tab{
-      padding: 10px 30px;
+      padding: 20px 20px;
     }
     @include sp{
       padding: 10px 20px;
+    }
+    .logo{
+      color:#fff;
+    }
+    .header__trigger span{
+      background:#fff;
     }
   }
 
@@ -25,6 +31,7 @@
     display: -ms-flex;
     display: flex;
     align-items: center;
+    z-index: 999;
     .logo{
       margin-right: 20px;
       font-size: 40px;
@@ -33,6 +40,9 @@
 
       >a:hover{
         opacity:1;
+      }
+      @include tab{
+        font-size: 34px;
       }
       @include sp{
         font-size: 30px;
@@ -74,10 +84,11 @@
       &__trigger{
         display: none;
         @include  tab{
-          display: block;
+          display: none;
         }
         @include  sp{
           display: block;
+          height: 24px;
         }
       }
 
@@ -93,6 +104,10 @@
         appearance: none;
         cursor: pointer;
         z-index: 100;
+        @include sp{
+          height: 24px;
+          width: 30px;
+        }
       }
       .menu-trigger span {
         display: inline-block;
@@ -104,15 +119,31 @@
         height: 3px;
         background-color: #fff;
         border-radius: 4px;
+        @include sp{
+          height: 2px;
+          background: #fff;
+        }
       }
       .menu-trigger span:nth-of-type(1) {
         top: 0;
       }
       .menu-trigger span:nth-of-type(2) {
         top: 20px;
+        @include sp{
+          top: 11px;
+        }
       }
       .menu-trigger span:nth-of-type(3) {
         bottom: 0;
       }
+      .menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(11px) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-11px) rotate(45deg);
+}
 
 }

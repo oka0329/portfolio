@@ -43,6 +43,17 @@ $(window).scroll(function(){
   }
 });
 
+// ハンバーガーメニュー
+$('.menu-trigger').click(function(){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+    $('.header-nav').removeClass('active');
+  }else{
+    $(this).addClass('active');
+    $('.header-nav').addClass('active');
+  }
+});
+
 // スライダー
  var mySwiper = new Swiper ('.swiper-container-works', {
    navigation: {

@@ -26,7 +26,7 @@
     @include sp{
       width: 90%;
       top: 65%;
-      padding: 5px;
+      padding: 10px 5px;
     }
     &.active{
       -webkit-animation: fadeInLeft .5s ease-out ;
@@ -43,7 +43,7 @@
     }
     @include sp{
       font-size: 32px;
-      margin: 0 0 5px;
+      margin: 0 0 10px;
     }
     &.active{
       -webkit-animation: fadeInLeft .5s ease-out .8s;

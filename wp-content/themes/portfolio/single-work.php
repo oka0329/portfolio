@@ -14,7 +14,16 @@
         <a href="/work">WORKS</a>
       </li>
       <li class="breadcrumb__item">
-        <span><?php the_title(); ?></span>
+        <span>
+          <?php
+          if(wp_is_mobile()){
+          if(mb_strlen($post->post_title, 'UTF-8')>12){
+              	$title= mb_substr($post->post_title, 0, 12, 'UTF-8');
+                	echo $title.'……';
+                }else{
+	                echo $post->post_title;
+                }
+              }else{the_title();} ?></span>
       </li>
     </ul>
   </div>
@@ -46,8 +55,16 @@
         <?php the_content(); ?>
       </div>
       <div class="post__link">
-        <span><?php previous_post_link('%link', '前の実績　|　%title'); ?></span>
-        <span><?php next_post_link('%link', '次の実績　|　%title'); ?></span>
+        <?php
+        if(wp_is_mobile()){
+          $link_name_prev = '前の実績';
+          $link_name_next = '次の実績';
+        }else{
+          $link_name_prev = '前の実績　|　%title';
+          $link_name_next = '次の実績　|　%title';
+        } ?>
+        <span><?php previous_post_link('%link', $link_name_prev); ?></span>
+        <span><?php next_post_link('%link', $link_name_next); ?></span>
       </div>
       <a href="/work" class="post__link--top">実績一覧へ→</a>
     </div>

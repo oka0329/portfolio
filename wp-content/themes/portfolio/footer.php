@@ -1,6 +1,8 @@
 
 <footer class="footer">
   <div class="footer-inner">
+
+    <!-- フッターナビゲーション -->
     <nav class="footer-nav">
       <ul class="footer-nav__list">
         <li class="footer-nav__item"><a href="/" class="footer-nav__link">TOP</a></li>
@@ -10,11 +12,13 @@
         <li class="footer-nav__item"><a href="/contact" class="footer-nav__link">CONTACT</a></li>
       </ul>
     </nav>
-    <div class="footer-sns">
-      <ul class="footer-sns__list">
-        <li class="footer-sns__item"><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li class="footer-sns__item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-        <li class="footer-sns__item"><a href=""><i class="fab fa-instagram"></i></a></li>
+    <!-- フッターナビゲーションここまで -->
+    
+    <div class="sns">
+      <ul class="sns__list">
+        <li class="sns__item"><a href="https://twitter.com/?lang=ja"><i class="fab fa-twitter"></i></a></li>
+        <li class="sns__item"><a href="https://ja-jp.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="sns__item"><a href="https://www.instagram.com/?hl=ja"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
     <p class="copyright">©First Stage all rights reserved.</p>

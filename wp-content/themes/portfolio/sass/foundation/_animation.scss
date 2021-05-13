@@ -90,8 +90,8 @@
   opacity: 0;
 }
 .js-fadein-second.active {
-  -webkit-animation: fadeInUp .6s ease-out .7s;
-  animation: fadeInUp .6s ease-out .7s;
+  -webkit-animation: fadeInUp .6s ease-out .5s;
+  animation: fadeInUp .6s ease-out .5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -99,8 +99,8 @@
   opacity: 0;
 }
 .js-fadein-third.active {
-  -webkit-animation: fadeInUp .6s ease-out 1.1s;
-  animation: fadeInUp .6s ease-out 1.1s;
+  -webkit-animation: fadeInUp .6s ease-out 0.7s;
+  animation: fadeInUp .6s ease-out 0.7s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }

@@ -1,8 +1,4 @@
 .skill{
-  margin-top: 200px;
-  @include tab{
-    margin-top: 100px;
-  }
   .heading{
     margin-bottom: 140px;
     @include tab{
@@ -11,12 +7,20 @@
   }
 }
 
+.main-about .concept{
+  padding-bottom: 60px;
+}
 .who{
+  background: #F0F0F0;
+  padding-bottom: 60px;
   &__body{
-    padding: 0 80px;
+    padding: 0 40px;
     font-size: 16px;
     @include tab{
-      padding: 0 40px;
+      padding: 0 20px;
+    }
+    @include sp{
+      padding: 0 15px;
     }
   }
   &__title{
@@ -24,9 +28,13 @@
     margin: 0 0 30px;
   }
   &__contents{
-    margin: 0 0 70px;
+    &:nth-child(1){
+      margin: 0 0 70px;
+    }
+    padding: 30px;
     @include tab{
       margin: 0 0 50px;
+      padding: 0;
     }
   }
   .profile-table{
@@ -34,15 +42,32 @@
     @include tab{
       padding: 0 15px;
     }
+    @include sp{
+      padding: 0;
+    }
     .table-left{
       width: 150px;
+      font-weight: bold;
       @include tab{
         width: 120px;
+      }
+      @include sp{
+        font-size: 18px;
       }
     }
     tr{
       margin: 0 0 10px;
       display: block;
+      @include sp{
+        margin: 0 0 30px;
+      }
+    }
+    td{
+      @include sp{
+        display: block;
+        width: 100%;
+        margin: 0 0 10px;
+      }
     }
   }
 }

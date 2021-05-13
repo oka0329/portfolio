@@ -3,19 +3,32 @@
   @include tab{
     padding: 0 15px;
   }
+  @include sp{
+    padding: 0 5px;
+  }
   span{
     font-size: 16px;
+    font-weight: bold;
     margin: 0 120px 0 0;
+    @include sp{
+      margin: 0 70px 0 0;
+    }
   }
   &__item{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     margin: 0 0 50px;
+    &:nth-child(3) .career__text::before{
+      height: 76px;
+    }
   }
   &__text{
     font-size: 18px;
     position: relative;
+    @include sp{
+      font-size: 16px;
+    }
     &::before{
       position: absolute;
       display: block;
@@ -24,7 +37,17 @@
       height: 52px;
       background: #f73859;
       top: 20px;
-      left: -50px;
+      left: -49px;
+      @include tab{
+        top: 19px;
+        left: -50px;
+        height: 52px;
+      }
+      @include sp{
+        left: -35px;
+        top: 15px;
+        height: 54px;
+      }
     }
     &::after{
       position: absolute;
@@ -35,7 +58,12 @@
       width: 20px;
       height: 20px;
       top: 0;
-      left: -60px;
+      left: -59px;
+      @include sp{
+        width: 15px;
+        height: 15px;
+        left: -42px;
+      }
     }
 
     &.active{

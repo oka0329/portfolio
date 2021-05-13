@@ -3,6 +3,9 @@
     margin: 0 auto;
     padding: 40px 0;
   }
+  @include sp{
+    padding: 0;
+  }
   .flex{
     display: -webkit-flex;
     display: -ms-flex;
@@ -10,9 +13,9 @@
     justify-content: center;
   }
   &__button{
-    width: 150px;
-    height: 40px;
-    font-size: 14px;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
     padding: 0;
     &:hover{
       transform: translateX(0);
@@ -21,6 +24,9 @@
   &__submit{
     margin: 50px 0 0;
     text-align: center;
+    @include sp{
+      margin: 20px 0 0;
+    }
   }
   &__back{
     margin: 50px 50px 0 0;
@@ -36,12 +42,41 @@
     @include tab{
       padding: 30px 30px 50px;
     }
+    @include sp{
+      padding: 20px 20px 40px;
+    }
+  }
+  tbody{
+    display: block;
+    width: 100%;
   }
   tr{
     display: block;
     width: 100%;
     &:not(:nth-last-child(1)){
       border-bottom: 1px solid #dbe2ef;
+    }
+    &:nth-child(4) .contact-form__right{
+      @include tab{
+        padding-left: 0;
+      }
+      @include tab{
+        padding-left: 20px;
+      }
+    }
+    @include sp{
+      padding: 30px 0;
+    }
+  }
+  th{
+    @include sp{
+      display: block;
+    }
+  }
+  td{
+    @include sp{
+      display: block;
+      width: 100%;
     }
   }
   span{
@@ -53,13 +88,20 @@
     font-weight: bold;
     letter-spacing: .1em;
     float: right;
+    @include sp{
+      float: none;
+      margin: 0 0 0 30px;
+    }
   }
   &__left{
-    padding: 30px;
+    padding: 30px 20px;
     width: 240px;
     @include tab{
       width: 320px;
       padding: 20px 15px 20px 0;
+    }
+    @include sp{
+      padding: 10px;
     }
   }
   &__right{
@@ -69,6 +111,9 @@
     @include tab{
       padding: 20px;
     }
+    @include sp{
+      padding: 10px;
+    }
   }
   &__note{
     font-size: 14px;
@@ -76,6 +121,9 @@
     color:#d72323;
     position: absolute;
     top:15px;
+    @include sp{
+      top: -50px;
+    }
   }
   .table__title{
     text-align: center;
@@ -83,9 +131,13 @@
     color:$sub-color;
     margin: 0 0 40px;
     font-weight: bold;
+    @include sp{
+      font-size: 20px;
+      margin: 0 0 30px;
+    }
   }
   input[type="text"]{
-    width: 300px;
+    width: 350px;
     height: 30px;
     font-size: 14px;
     border: 1px solid $sub-color;
@@ -97,6 +149,9 @@
       }
       @include tab{
         width: 270px;
+      }
+      @include sp{
+        width: 100%;
       }
     }
   input[type="radio"]{
@@ -121,6 +176,9 @@
     @include tab{
       width: 270px;
     }
+    @include tab{
+      width: 100%;
+    }
   }
   textarea:focus{
     border: 3px solid $sub-color;
@@ -139,6 +197,12 @@
       font-size: 14px;
       font-weight: bold;
       color:#d72323;
+    }
+  }
+  .pa-l-0{
+    padding-left: 0;
+    @include sp{
+      padding-left: 10px;
     }
   }
 }

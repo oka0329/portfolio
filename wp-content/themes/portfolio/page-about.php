@@ -21,6 +21,25 @@
 <!-- breadcrumb -->
 
 <main class="main main-about">
+  <section class="l-section concept">
+    <div class="l-inner">
+      <div class="heading js-fadein-first">
+        <h3 class="heading__title">CONCEPT</h3>
+      </div>
+      <div class="concept__body js-fadein-second">
+        <div class="concept__contents">
+          <h4 class="concept__title">正確で丁寧をモットーに</h4>
+          <p class="concept__text">人と人をつなぐ架け橋となる<br class="dn_pc">webサイトを作りたい。<br>お客様の想いをユーザーへ伝えるために、<br class="dn_pc">少しでも力になれるよう<br class="dn_pc">お手伝いをさせて頂きます。</p>
+        </div>
+        <div class="concept__image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/image/mv06.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- concept-section -->
+
+
   <section class="l-section who">
     <div class="l-inner">
       <div class="heading js-fadein-first">
@@ -53,7 +72,7 @@
         <div class="career">
           <div class="career__item">
               <span>1994年</span>
-              <p class="career__text">大分県にて誕生</p>
+              <p class="career__text">大分県生まれ</p>
           </div>
           <div class="career__item">
               <span>2018年</span>
@@ -61,7 +80,7 @@
           </div>
           <div class="career__item">
               <span>2020年</span>
-              <p class="career__text">web制作に興味を持ち、独学で勉強を始める</p>
+              <p class="career__text">web制作に興味を持ち<br class="dn_pc">独学で勉強を始める</p>
           </div>
           <div class="career__item">
               <span>2021年</span>
@@ -74,19 +93,6 @@
   </section>
   <!-- who-section -->
 
-
-  <section class="l-section concept">
-    <div class="l-inner">
-      <div class="heading js-fadein-first">
-        <h3 class="heading__title">CONCEPT</h3>
-      </div>
-      <div class="concept__body js-fadein-second">
-        <h4 class="concept__title">正確で丁寧をモットーに</h4>
-        <p class="concept__text">人と人をつなぐ架け橋となるwebサイトを作りたい。<br>お客様の想いをユーザーへ伝えるために、<br class="dn_pc">少しでも力になれるようお手伝いをさせて頂きます。</p>
-      </div>
-    </div>
-  </section>
-  <!-- concept-section -->
 
   <section class="l-section skill">
     <div class="l-inner">
