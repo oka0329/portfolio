@@ -29,7 +29,7 @@
       <div class="concept__body js-fadein-second">
         <div class="concept__contents">
           <h4 class="concept__title">正確で丁寧をモットーに</h4>
-          <p class="concept__text">人と人をつなぐ架け橋となる<br class="dn_pc">webサイトを作りたい。<br>お客様の想いをユーザーへ伝えるために、<br class="dn_pc">少しでも力になれるよう<br class="dn_pc">お手伝いをさせて頂きます。</p>
+          <p class="concept__text">会社や商品の看板となるwebサイト。お客様の願いや想いが少しでもユーザーへ届くように。決してレベルは高くありませんが自分にできることをひとつずつ、細かいところまで丁寧なコーディングを心がけています。<br></p>
         </div>
         <div class="concept__image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/image/mv06.jpg" alt="">
@@ -56,6 +56,10 @@
           <tr>
             <td class="table-left">年齢</td>
             <td class="table-right">27歳</td>
+          </tr>
+          <tr>
+            <td class="table-left">地域</td>
+            <td class="table-right">横浜市</td>
           </tr>
           <tr>
             <td class="table-left">好きなこと</td>
@@ -101,7 +105,7 @@
       </div>
       <div class="skill__body js-fadein-first">
         <p class="skill__name">フロントエンド</p>
-        <p class="skill__text">W3Cが勧告しているWeb標準に準拠したコーディングを心がけています<br>また、jQueryを用いてユーザーの目に留まるデザインを再現しています</p>
+        <p class="skill__text">他人が見ても分かりやすく、修正しやすいコーディングを心がけています<br>また、jQueryを用いてユーザーの目に留まるデザインを再現しています</p>
         <div class="skill__list">
           <div class="skill__item skill__item--html"><span>HTML</span></div>
           <div class="skill__item skill__item--css"><span>CSS</span></div>

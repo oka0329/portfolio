@@ -1220,6 +1220,12 @@ input[type="button"]::focus {
   color: #fff;
 }
 
+@media (max-width: 770px) {
+  .hero {
+    margin: 0 0 80px;
+  }
+}
+
 @media (max-width: 480px) {
   .hero {
     height: 80vh;
@@ -1571,8 +1577,8 @@ input[type="button"]::focus {
 
 @media (max-width: 770px) {
   .page-top {
-    bottom: 30px;
-    right: 30px;
+    bottom: 45px;
+    right: 45px;
   }
 }
 
@@ -1725,6 +1731,11 @@ input[type="button"]::focus {
   .post__title {
     font-size: 20px;
   }
+}
+
+.post__body {
+  font-size: 16px;
+  line-height: 2;
 }
 
 .post__link {
@@ -2443,6 +2454,9 @@ input[type="button"]::focus {
 .who__title {
   font-size: 22px;
   margin: 0 0 30px;
+  padding: 0 20px 3px 20px;
+  border-bottom: 2px solid #52616b;
+  display: inline-block;
 }
 
 .who__contents {
@@ -2494,7 +2508,7 @@ input[type="button"]::focus {
 }
 
 .who .profile-table tr {
-  margin: 0 0 10px;
+  margin: 0 0 20px;
   display: block;
 }
 
@@ -2645,7 +2659,7 @@ input[type="button"]::focus {
 .blog-main h2 {
   padding: 20px 0 20px 30px;
   border-bottom: 2px solid #52616b;
-  margin: 80px 0 0;
+  margin: 80px 0 60px;
   font-size: 26px;
   font-weight: bold;
   letter-spacing: .1em;
@@ -2666,9 +2680,10 @@ input[type="button"]::focus {
 }
 
 .blog-main h3 {
-  padding: 10px 0 10px 30px;
-  margin: 50px 0 0;
+  padding: 10px 30px;
+  margin: 40px 0 20px;
   font-size: 22px;
+  color: #00A678;
 }
 
 @media (max-width: 480px) {
@@ -2710,15 +2725,22 @@ input[type="button"]::focus {
 
 .blog-main p {
   padding: 0 0 0 30px;
-  margin: 20px 0 0;
+  margin: 30px 0 0;
   font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: -.05em;
 }
 
 @media (max-width: 480px) {
   .blog-main p {
     padding: 0 0 0 10px;
     margin: 20px 0 0;
+    font-size: 15px;
   }
+}
+
+.blog-main a {
+  text-decoration: underline;
 }
 
 .blog-main strong {
@@ -2892,6 +2914,7 @@ input[type="button"]::focus {
 
 .concept__contents {
   margin: 0 60px 0 0;
+  width: 60%;
 }
 
 @media (max-width: 770px) {
@@ -2903,6 +2926,7 @@ input[type="button"]::focus {
 @media (max-width: 480px) {
   .concept__contents {
     margin: 0;
+    width: 100%;
   }
 }
 
@@ -3311,7 +3335,7 @@ input[type="button"]::focus {
 }
 
 .work-main .post__text {
-  margin: 0 0 30px !important;
+  margin: 0 0 50px !important;
   padding: 0;
   line-height: 1.4;
 }

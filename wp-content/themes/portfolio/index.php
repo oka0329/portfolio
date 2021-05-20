@@ -19,7 +19,7 @@
       <div class="concept__body js-fadein-second">
         <div class="concept__contents">
           <h4 class="concept__title">正確で丁寧をモットーに</h4>
-          <p class="concept__text">人と人をつなぐ架け橋となる<br class="dn_pc">webサイトを作りたい。<br>お客様の想いをユーザーへ伝えるために、<br class="dn_pc">少しでも力になれるよう<br class="dn_pc">お手伝いをさせて頂きます。</p>
+          <p class="concept__text">会社や商品の看板となるwebサイト。お客様の願いや想いが少しでもユーザーへ届くように。決してレベルは高くありませんが自分にできることをひとつずつ、細かいところまで丁寧なコーディングを心がけています。<br></p>
           <div class="concept__link dn_sp js-fadein-third">
             <a href="/about" class="button button-main">MORE</a>
           </div>

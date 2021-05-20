@@ -5,6 +5,9 @@
   background-size: cover;
   position: relative;
   color:#fff;
+  @include tab{
+    margin: 0 0 80px;
+  }
   @include sp{
     height: 80vh;
   }

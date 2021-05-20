@@ -37,6 +37,10 @@
       font-size: 20px;
     }
   }
+  &__body{
+    font-size: 16px;
+    line-height: 2;
+  }
     &__link{
       border-top: 1px solid $base-color;
       border-bottom: 1px solid $base-color;

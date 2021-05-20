@@ -23,7 +23,8 @@
                 }else{
 	                echo $post->post_title;
                 }
-              }else{the_title();} ?></span>
+              }else{the_title();} ?>
+            </span>
       </li>
     </ul>
   </div>
@@ -50,9 +51,10 @@
       </div>
       <div class="post__contents">
         <p class="post__name"><?php the_title(); ?><br><span><?php echo $link; ?></span></a>
-
         <p class="post__text"><?php echo $language; ?></p>
-        <?php the_content(); ?>
+        <div class="post__body">
+          <?php the_content(); ?>
+        </div>
       </div>
       <div class="post__link">
         <?php

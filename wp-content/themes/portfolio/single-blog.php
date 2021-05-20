@@ -14,7 +14,17 @@
         <a href="/blog">BLOG</a>
       </li>
       <li class="breadcrumb__item">
-        <span><?php the_title(); ?></span>
+        <span>
+          <?php
+          if(wp_is_mobile()){
+          if(mb_strlen($post->post_title, 'UTF-8')>12){
+              	$title= mb_substr($post->post_title, 0, 12, 'UTF-8');
+                	echo $title.'……';
+                }else{
+	                echo $post->post_title;
+                }
+              }else{the_title();} ?>
+        </span>
       </li>
     </ul>
   </div>
